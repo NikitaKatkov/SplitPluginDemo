@@ -5,6 +5,7 @@ import fleet.rpc.RemoteApi
 import fleet.rpc.Rpc
 import fleet.rpc.remoteApiDescriptor
 import kotlinx.coroutines.flow.Flow
+import kotlinx.serialization.Serializable
 
 @Rpc
 interface SplitPluginRpcApi : RemoteApi<Unit> {
@@ -14,5 +15,8 @@ interface SplitPluginRpcApi : RemoteApi<Unit> {
         }
     }
 
-    suspend fun getSomeHeavyComputationResultsFlow(): Flow<Int>
+    suspend fun getSomeHeavyComputationResultsFlow(): Flow<ComputationResult>
 }
+
+@Serializable
+data class ComputationResult(val value: Boolean)

@@ -24,7 +24,7 @@ private class FrontendTestToolwindowFactory : ToolWindowFactory {
             LOG.warn("Obtained SplitPluginRpcApi instance")
             service.getSomeHeavyComputationResultsFlow().collect {
                 LOG.warn("Received value from backend: $it")
-                label.text = "Received value from backend: $it"
+                label.text = "Received value from backend: ${it.value}"
             }
         }
 
