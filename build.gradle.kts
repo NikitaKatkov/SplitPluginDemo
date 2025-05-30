@@ -1,3 +1,6 @@
+import org.jetbrains.intellij.platform.gradle.IntelliJPlatformType
+import org.jetbrains.intellij.platform.gradle.tasks.aware.SplitModeAware.SplitModeTarget
+
 plugins {
     application
     id("java")
@@ -20,17 +23,18 @@ repositories {
 dependencies {
     intellijPlatform {
         create("IU", "2025.1", useInstaller = false)
-
         pluginModule(implementation(project(":frontend")))
-
         testFramework(org.jetbrains.intellij.platform.gradle.TestFrameworkType.Platform)
     }
 }
 
 intellijPlatform {
+    splitMode = true
+    splitModeTarget = SplitModeTarget.BOTH
+
     pluginConfiguration {
         ideaVersion {
-            sinceBuild = "252"
+            sinceBuild = "251"
         }
 
         changeNotes = """
@@ -39,15 +43,34 @@ intellijPlatform {
     }
 }
 
+kotlin {
+    compilerOptions {
+        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_21)
+    }
+}
+
 tasks {
     withType<JavaCompile> {
         sourceCompatibility = "21"
         targetCompatibility = "21"
     }
-}
 
-kotlin {
-    compilerOptions {
-        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_21)
+    prepareJarSearchableOptions {
+        enabled = false
+    }
+
+    val runIdeaInRemoteDevMode by intellijPlatformTesting.runIde.registering {
+        type = IntelliJPlatformType.IntellijIdeaUltimate
+
+        splitMode = true
+        splitModeTarget = SplitModeTarget.BOTH
+
+        task {
+            setJvmArgs(
+                mutableListOf(
+                    "-Didea.kotlin.plugin.use.k2=true",
+                )
+            )
+        }
     }
 }

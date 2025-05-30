@@ -19,3 +19,9 @@ dependencies {
         pluginModule(implementation(project(":shared")))
     }
 }
+
+tasks {
+    prepareJarSearchableOptions {
+        enabled = false
+    }
+}

@@ -17,3 +17,9 @@ dependencies {
         create("IU", "2025.1", useInstaller = false)
     }
 }
+
+tasks {
+    prepareJarSearchableOptions {
+        enabled = false
+    }
+}
