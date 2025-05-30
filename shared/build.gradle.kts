@@ -2,6 +2,7 @@ plugins {
     application
     id("rpc") version "2.1.10-0.2"
     id("org.jetbrains.intellij.platform") version "2.6.0"
+    kotlin("jvm")
 }
 
 repositories {
@@ -16,10 +17,14 @@ dependencies {
     intellijPlatform {
         create("IU", "2025.1", useInstaller = false)
     }
+    implementation(kotlin("stdlib-jdk8"))
 }
 
 tasks {
     prepareJarSearchableOptions {
         enabled = false
     }
+}
+kotlin {
+    jvmToolchain(21)
 }

@@ -23,7 +23,10 @@ repositories {
 dependencies {
     intellijPlatform {
         create("IU", "2025.1", useInstaller = false)
+        bundledModule("intellij.platform.rpc.backend")
+        pluginModule(implementation(project(":shared")))
         pluginModule(implementation(project(":frontend")))
+        pluginModule(implementation(project(":backend")))
         testFramework(org.jetbrains.intellij.platform.gradle.TestFrameworkType.Platform)
     }
 }
