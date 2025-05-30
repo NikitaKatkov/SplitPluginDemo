@@ -20,11 +20,11 @@ internal class BackendRpcApiImpl : SplitPluginRpcApi {
             var count = 0
             for (value in generateSequence(0, Int::inc)) {
                 LOG.debug("Emitting value: $value")
-                emit(ComputationResult(value % 2 == 0))
+                emit(ComputationResult(value))
                 delay(500)
                 count++
 
-                if (count % 10 == 0) {
+                if (count % 100 == 0) {
                     LOG.warn("Emitted $count values so far")
                 }
             }

@@ -19,4 +19,4 @@ interface SplitPluginRpcApi : RemoteApi<Unit> {
 }
 
 @Serializable
-data class ComputationResult(val value: Boolean)
+data class ComputationResult(val value: Int)
