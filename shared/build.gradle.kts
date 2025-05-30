@@ -24,7 +24,11 @@ tasks {
     prepareJarSearchableOptions {
         enabled = false
     }
+    buildSearchableOptions {
+        enabled = false
+    }
 }
+
 kotlin {
     jvmToolchain(21)
 }
