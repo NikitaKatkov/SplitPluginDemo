@@ -15,5 +15,6 @@
     <content>
         <module name="SplitPlugin.shared.main"/>
         <module name="SplitPlugin.frontend.main"/>
+        <module name="SplitPlugin.backend.main"/>
     </content>
 </idea-plugin>
