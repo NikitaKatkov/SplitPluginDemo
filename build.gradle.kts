@@ -4,8 +4,6 @@ import org.jetbrains.intellij.platform.gradle.tasks.aware.SplitModeAware.SplitMo
 plugins {
     application
     id("java")
-    kotlin("jvm") version "2.1.10"
-    kotlin("plugin.serialization") version "2.1.10"
     id("org.jetbrains.intellij.platform") version "2.6.0"
 }
 
@@ -42,12 +40,6 @@ intellijPlatform {
         changeNotes = """
             Initial version
         """.trimIndent()
-    }
-}
-
-kotlin {
-    compilerOptions {
-        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_21)
     }
 }
 

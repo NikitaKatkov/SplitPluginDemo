@@ -20,8 +20,8 @@ dependencies {
     }
     implementation(kotlin("stdlib-jdk8"))
 
-    compileOnly("org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.8.0")
-    compileOnly("org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.8.0")
+    compileOnly("org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.7.3")
+    compileOnly("org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.7.3")
 }
 
 tasks {
