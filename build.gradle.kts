@@ -4,9 +4,9 @@ import org.jetbrains.intellij.platform.gradle.tasks.aware.SplitModeAware.SplitMo
 plugins {
     application
     id("java")
-    id("org.jetbrains.kotlin.jvm") version "2.1.10"
+    kotlin("jvm") version "2.1.10"
+    kotlin("plugin.serialization") version "2.1.10"
     id("org.jetbrains.intellij.platform") version "2.6.0"
-    id("rpc") version "2.1.10-0.2"
 }
 
 group = "com.example"
