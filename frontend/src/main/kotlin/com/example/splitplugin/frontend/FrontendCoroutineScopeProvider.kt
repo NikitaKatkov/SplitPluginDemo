@@ -1,13 +1,14 @@
 package com.example.splitplugin.frontend
 
+import com.intellij.openapi.application.ApplicationManager
 import com.intellij.openapi.components.Service
 import kotlinx.coroutines.CoroutineScope
 
-@Service(Service.Level.PROJECT)
+@Service(Service.Level.APP)
 internal class FrontendCoroutineScopeProvider(val scope: CoroutineScope) {
     companion object {
-        fun getInstance(project: com.intellij.openapi.project.Project): FrontendCoroutineScopeProvider {
-            return project.getService(FrontendCoroutineScopeProvider::class.java)
+        fun getInstance(): FrontendCoroutineScopeProvider {
+            return ApplicationManager.getApplication().getService(FrontendCoroutineScopeProvider::class.java)
         }
     }
 }
