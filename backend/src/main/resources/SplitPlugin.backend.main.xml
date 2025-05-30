@@ -1,7 +1,6 @@
 <idea-plugin package="com.example.splitplugin.backend">
     <dependencies>
-        <module name="intellij.platform.backend"/>
-        <module name="intellij.platform.rpc.backend"/>
+        <module name="intellij.platform.kernel.backend"/>
         <module name="SplitPlugin.shared.main"/>
     </dependencies>
 
