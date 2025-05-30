@@ -1,4 +1,5 @@
 plugins {
+    application
     id("java")
     id("org.jetbrains.kotlin.jvm") version "2.1.0"
     id("org.jetbrains.intellij.platform") version "2.5.0"
@@ -10,22 +11,24 @@ version = "1.0-SNAPSHOT"
 repositories {
     mavenCentral()
     intellijPlatform {
+        snapshots()
         defaultRepositories()
     }
 }
-
 dependencies {
     intellijPlatform {
-        create("IC", "2025.1")
-        testFramework(org.jetbrains.intellij.platform.gradle.TestFrameworkType.Platform)
+        create("IU", "252.18003-EAP-CANDIDATE-SNAPSHOT", useInstaller = false)
 
+        pluginModule(implementation(project(":frontend")))
+
+        testFramework(org.jetbrains.intellij.platform.gradle.TestFrameworkType.Platform)
     }
 }
 
 intellijPlatform {
     pluginConfiguration {
         ideaVersion {
-            sinceBuild = "251"
+            sinceBuild = "252"
         }
 
         changeNotes = """

@@ -13,6 +13,6 @@
     <depends>com.intellij.modules.platform</depends>
 
     <content>
-
+        <module name="SplitPlugin.frontend.main"/>
     </content>
 </idea-plugin>
