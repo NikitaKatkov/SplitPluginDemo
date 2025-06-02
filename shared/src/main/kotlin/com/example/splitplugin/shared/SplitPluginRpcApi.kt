@@ -16,7 +16,17 @@ interface SplitPluginRpcApi : RemoteApi<Unit> {
     }
 
     suspend fun getSomeHeavyComputationResultsFlow(): Flow<ComputationResult>
+    suspend fun updateBackendState(request: UpdateBackendStateRequest)
 }
 
 @Serializable
 data class ComputationResult(val value: Int)
+
+@Serializable
+sealed interface UpdateBackendStateRequest {
+    @Serializable
+    data class DecreaseCounter(val value: Int) : UpdateBackendStateRequest
+
+    @Serializable
+    data class IncreaseCounter(val value: Int) : UpdateBackendStateRequest
+}
