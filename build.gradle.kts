@@ -4,7 +4,7 @@ import org.jetbrains.intellij.platform.gradle.tasks.aware.SplitModeAware.SplitMo
 plugins {
     application
     id("java")
-    id("org.jetbrains.intellij.platform") version "2.6.0"
+    alias(libs.plugins.ij.gradle.plugin)
 }
 
 group = "com.example"
@@ -56,18 +56,11 @@ tasks {
         enabled = false
     }
 
+    @Suppress("unused") 
     val runIdeaInRemoteDevMode by intellijPlatformTesting.runIde.registering {
         type = IntelliJPlatformType.IntellijIdeaUltimate
 
         splitMode = true
         splitModeTarget = SplitModeTarget.BOTH
-
-        task {
-            setJvmArgs(
-                mutableListOf(
-                    "-Didea.kotlin.plugin.use.k2=true",
-                )
-            )
-        }
     }
 }

@@ -1,9 +1,9 @@
 plugins {
     application
-    id("rpc") version "2.1.10-0.2"
-    id("org.jetbrains.intellij.platform") version "2.6.0"
-    kotlin("jvm") version "2.1.10"
-    kotlin("plugin.serialization") version "2.1.10"
+    alias(libs.plugins.ij.rpc.plugin)
+    alias(libs.plugins.ij.gradle.plugin)
+    alias(libs.plugins.ij.kotlin.jvm.plugin)
+    alias(libs.plugins.ij.kotlin.serialization.plugin)
 }
 
 repositories {

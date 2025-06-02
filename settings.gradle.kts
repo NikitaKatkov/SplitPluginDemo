@@ -9,3 +9,11 @@ pluginManagement {
         maven("https://packages.jetbrains.team/maven/p/ij/intellij-dependencies/")
     }
 }
+
+dependencyResolutionManagement {
+    versionCatalogs {
+        create("libs") {
+            from(files("gradle/wrapper/libs.toml"))
+        }
+    }
+}
