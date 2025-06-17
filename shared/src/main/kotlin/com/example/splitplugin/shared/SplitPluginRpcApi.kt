@@ -1,5 +1,6 @@
 package com.example.splitplugin.shared
 
+import com.intellij.ide.vfs.VirtualFileId
 import com.intellij.platform.rpc.RemoteApiProviderService
 import fleet.rpc.RemoteApi
 import fleet.rpc.Rpc
@@ -20,7 +21,7 @@ interface SplitPluginRpcApi : RemoteApi<Unit> {
 }
 
 @Serializable
-data class ComputationResult(val value: Int)
+data class ComputationResult(val value: Int, val id: String? = null)
 
 @Serializable
 sealed interface UpdateBackendStateRequest {
@@ -28,5 +29,5 @@ sealed interface UpdateBackendStateRequest {
     data class DecreaseCounter(val value: Int) : UpdateBackendStateRequest
 
     @Serializable
-    data class IncreaseCounter(val value: Int) : UpdateBackendStateRequest
+    data class IncreaseCounter(val value: Int, val fileId: VirtualFileId?) : UpdateBackendStateRequest
 }

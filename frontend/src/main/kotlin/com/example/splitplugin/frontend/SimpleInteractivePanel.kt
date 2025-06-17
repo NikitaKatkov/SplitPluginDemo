@@ -2,7 +2,10 @@ package com.example.splitplugin.frontend
 
 import com.example.splitplugin.shared.SplitPluginRpcApi
 import com.example.splitplugin.shared.UpdateBackendStateRequest
+import com.intellij.ide.vfs.rpcId
 import com.intellij.openapi.diagnostic.logger
+import com.intellij.openapi.fileEditor.FileEditorManager
+import com.intellij.openapi.project.ProjectManager
 import com.intellij.util.ui.components.BorderLayoutPanel
 import kotlinx.coroutines.CoroutineStart
 import kotlinx.coroutines.launch
@@ -20,7 +23,8 @@ internal class SimpleInteractivePanel : BorderLayoutPanel() {
             addActionListener {
                 csProvider.scope.launch {
                     SplitPluginRpcApi.getInstanceAsync()
-                        .updateBackendState(UpdateBackendStateRequest.IncreaseCounter(1000))
+                        .updateBackendState(UpdateBackendStateRequest.IncreaseCounter(1000, FileEditorManager.getInstance(
+                            ProjectManager.getInstance().openProjects.single()).selectedEditor?.file?.rpcId()))
                 }
             }
         }
@@ -44,7 +48,7 @@ internal class SimpleInteractivePanel : BorderLayoutPanel() {
             LOG.warn("Starting new coroutine in FrontendTestToolwindowFactory instance")
             SplitPluginRpcApi.getInstanceAsync().getSomeHeavyComputationResultsFlow().collect {
                 LOG.warn("Received value from backend: $it")
-                label.text = "Received value from backend: ${it.value}"
+                label.text = "Received value from backend: ${it.value}, id: ${it.id}"
             }
         }
     }

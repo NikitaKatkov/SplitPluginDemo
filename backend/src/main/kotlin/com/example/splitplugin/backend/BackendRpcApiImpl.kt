@@ -3,6 +3,7 @@ package com.example.splitplugin.backend
 import com.example.splitplugin.shared.ComputationResult
 import com.example.splitplugin.shared.SplitPluginRpcApi
 import com.example.splitplugin.shared.UpdateBackendStateRequest
+import com.intellij.ide.vfs.virtualFile
 import com.intellij.openapi.diagnostic.Logger
 import com.intellij.openapi.diagnostic.logger
 import com.intellij.platform.util.coroutines.childScope
@@ -40,7 +41,7 @@ internal class BackendRpcApiImpl : SplitPluginRpcApi {
             is UpdateBackendStateRequest.IncreaseCounter -> {
                 LOG.warn("Increasing counter by ${request.value}")
                 backendState.update { previousResult ->
-                    ComputationResult(previousResult.value + request.value)
+                    ComputationResult(previousResult.value + request.value, request.fileId?.virtualFile()?.name)
                 }
             }
         }
