@@ -23,11 +23,26 @@ internal class SimpleInteractivePanel : BorderLayoutPanel() {
             addActionListener {
                 csProvider.scope.launch {
                     SplitPluginRpcApi.getInstanceAsync()
-                        .updateBackendState(UpdateBackendStateRequest.IncreaseCounter(1000, FileEditorManager.getInstance(
-                            ProjectManager.getInstance().openProjects.single()).selectedEditor?.file?.rpcId()))
+                        .updateBackendState(
+                            UpdateBackendStateRequest.IncreaseCounter(
+                                1000, FileEditorManager.getInstance(
+                                    ProjectManager.getInstance().openProjects.single()
+                                ).selectedEditor?.file?.rpcId()
+                            )
+                        )
                 }
             }
         }
+        val buttonForwardPort = JButton().apply {
+            text = "Forward port 8080"
+            addActionListener {
+                csProvider.scope.launch {
+                    SplitPluginRpcApi.getInstanceAsync()
+                        .updateBackendState(UpdateBackendStateRequest.StartPortForwarding(8080))
+                }
+            }
+        }
+
         val buttonDecreaseCounter = JButton().apply {
             text = "Decrease counter"
             addActionListener {
@@ -39,6 +54,7 @@ internal class SimpleInteractivePanel : BorderLayoutPanel() {
         }
         val buttonsPanel = BorderLayoutPanel()
         buttonsPanel.addToLeft(buttonDecreaseCounter)
+        buttonsPanel.addToCenter(buttonForwardPort)
         buttonsPanel.addToRight(buttonIncreaseCounter)
 
         addToCenter(label)

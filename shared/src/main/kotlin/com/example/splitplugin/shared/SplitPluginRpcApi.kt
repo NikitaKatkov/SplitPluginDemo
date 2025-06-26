@@ -30,4 +30,7 @@ sealed interface UpdateBackendStateRequest {
 
     @Serializable
     data class IncreaseCounter(val value: Int, val fileId: VirtualFileId?) : UpdateBackendStateRequest
+
+    @Serializable
+    data class StartPortForwarding(val backendPort: Int) : UpdateBackendStateRequest
 }

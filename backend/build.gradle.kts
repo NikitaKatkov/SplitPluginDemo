@@ -20,6 +20,7 @@ dependencies {
 
         pluginModule(implementation(project(":shared")))
         bundledModule("intellij.platform.rpc.backend")
+        bundledPlugin("com.jetbrains.codeWithMe")
     }
     implementation(kotlin("stdlib-jdk8"))
     compileOnly("org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.7.3")
