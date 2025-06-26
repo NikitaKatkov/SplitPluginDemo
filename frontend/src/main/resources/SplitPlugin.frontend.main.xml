@@ -10,5 +10,14 @@
                     factoryClass="com.example.splitplugin.frontend.FrontendTestToolwindowFactory"
                     secondary="false"
                     anchor="left"/>
+
+        <toolWindow factoryClass="com.example.splitplugin.frontend.jcef.ChatToolWindowFactory"
+                    id="ChatToolWindowFactory"
+                    secondary="false"
+                    anchor="right"/>
+        <toolWindow factoryClass="com.example.splitplugin.frontend.jcef.ChatUrlWindowFactory"
+                    id="ChatUrlWindowFactory"
+                    secondary="false"
+                    anchor="right"/>
     </extensions>
 </idea-plugin>
