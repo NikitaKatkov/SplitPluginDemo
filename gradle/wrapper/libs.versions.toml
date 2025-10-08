@@ -3,6 +3,7 @@ ij-gradle-plugin = "2.6.0"
 ij-rpc-plugin = "2.1.10-0.2"
 ij-kotlin-jvm-plugin = "2.1.10"
 ij-kotlin-serialization-plugin = "2.1.10"
+ij-platform = "2025.1"
 
 [plugins]
 ij-gradle-plugin = { id = "org.jetbrains.intellij.platform", version.ref = "ij-gradle-plugin" }

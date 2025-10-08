@@ -1,10 +1,9 @@
 import org.jetbrains.intellij.platform.gradle.IntelliJPlatformType
-import org.jetbrains.intellij.platform.gradle.tasks.aware.SplitModeAware.SplitModeTarget
 
 plugins {
     application
-    id("java")
     id("org.jetbrains.intellij.platform")
+    id("java")
 }
 
 repositories {

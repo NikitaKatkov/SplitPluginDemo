@@ -8,10 +8,9 @@ plugins {
 group = "com.example"
 version = "1.0-SNAPSHOT"
 
-
 dependencies {
     intellijPlatform {
-        create(IntelliJPlatformType.IntellijIdeaUltimate.code, "2025.1", useInstaller = false)
+        create(IntelliJPlatformType.IntellijIdeaUltimate.code, libs.versions.ij.platform, useInstaller = false)
         pluginModule(implementation(project(":shared")))
         pluginModule(implementation(project(":frontend")))
         pluginModule(implementation(project(":backend")))
