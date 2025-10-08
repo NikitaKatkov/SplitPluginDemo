@@ -11,7 +11,7 @@ version = "1.0-SNAPSHOT"
 
 dependencies {
     intellijPlatform {
-        create("IU", "2025.1", useInstaller = false)
+        create(IntelliJPlatformType.IntellijIdeaUltimate.code, "2025.1", useInstaller = false)
         pluginModule(implementation(project(":shared")))
         pluginModule(implementation(project(":frontend")))
         pluginModule(implementation(project(":backend")))
@@ -22,24 +22,11 @@ dependencies {
 intellijPlatform {
     splitMode = true
     splitModeTarget = SplitModeTarget.BOTH
-
-    pluginConfiguration {
-        ideaVersion {
-            sinceBuild = "251"
-        }
-
-        changeNotes = """
-            Initial version
-        """.trimIndent()
-    }
 }
 
 tasks {
     @Suppress("unused") 
     val runIdeaInRemoteDevMode by intellijPlatformTesting.runIde.registering {
         type = IntelliJPlatformType.IntellijIdeaUltimate
-
-        splitMode = true
-        splitModeTarget = SplitModeTarget.BOTH
     }
 }
