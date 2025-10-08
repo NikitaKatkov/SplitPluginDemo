@@ -1,5 +1,5 @@
 plugins {
-    id("intellij-platform-module")
+    id("intellij-platform-remdev")
 }
 
 
