@@ -2,21 +2,12 @@ import org.jetbrains.intellij.platform.gradle.IntelliJPlatformType
 import org.jetbrains.intellij.platform.gradle.tasks.aware.SplitModeAware.SplitModeTarget
 
 plugins {
-    application
-    id("java")
-    alias(libs.plugins.ij.gradle.plugin)
+    id("intellij-platform-main")
 }
 
 group = "com.example"
 version = "1.0-SNAPSHOT"
 
-repositories {
-    mavenCentral()
-    intellijPlatform {
-        snapshots()
-        defaultRepositories()
-    }
-}
 
 dependencies {
     intellijPlatform {
@@ -44,18 +35,6 @@ intellijPlatform {
 }
 
 tasks {
-    withType<JavaCompile> {
-        sourceCompatibility = "21"
-        targetCompatibility = "21"
-    }
-
-    prepareJarSearchableOptions {
-        enabled = false
-    }
-    buildSearchableOptions {
-        enabled = false
-    }
-
     @Suppress("unused") 
     val runIdeaInRemoteDevMode by intellijPlatformTesting.runIde.registering {
         type = IntelliJPlatformType.IntellijIdeaUltimate
