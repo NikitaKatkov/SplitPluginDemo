@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dcab3c8f-f110-4891-9b11-eb906bf5e058" name="Changes" comment="working, revert gradle plugin update" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/shared">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/backend">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/frontend">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SplitPlugin" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SplitPlugin" type="f1a62948:ProjectNode" />
+                <item name="SplitPlugin" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SplitPlugin" type="f1a62948:ProjectNode" />
+                <item name="SplitPlugin" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SplitPlugin" type="f1a62948:ProjectNode" />
+                <item name="SplitPlugin" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="intellij platform" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SplitPlugin" type="f1a62948:ProjectNode" />
+                <item name="buildSources" type="2d1252cf:ModuleNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin Object" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="f3af1ac12a9a7e051017a8cec22087102ce0acde" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;NikitaKatkov&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/NikitaKatkov/SplitPluginDemo.git&quot;,
+    &quot;accountId&quot;: &quot;3e7f81e9-fbaa-41e3-a851-35a7a1c00b67&quot;
+  }
+}</component>
+  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="$USER_HOME$/.gradle/wrapper/dists/gradle-8.13-bin/5xuhj0ry160q40clulazy9h7d/gradle-8.13" javaHome="$USER_HOME$/Library/Java/JavaVirtualMachines/jbr-21.0.2/Contents/Home" gradleVersion="8.13" />
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.platform/intellij-platform-gradle-plugin/2.6.0/44f08a6144405aa5a532413e50c5022f2c053adc/intellij-platform-gradle-plugin-2.6.0-sources.jar!/org/jetbrains/intellij/platform/gradle/IntelliJPlatformType.kt" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.platform/intellij-platform-gradle-plugin/2.6.0/44f08a6144405aa5a532413e50c5022f2c053adc/intellij-platform-gradle-plugin-2.6.0-sources.jar!/org/jetbrains/intellij/platform/gradle/extensions/IntelliJPlatformTestingExtension.kt" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.platform/intellij-platform-gradle-plugin/2.6.0/d138908fb8581002d468e5f33edfc3655b9ede96/intellij-platform-gradle-plugin-2.6.0.jar!/org/jetbrains/intellij/platform/gradle/IntelliJPlatformType.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-8.13-bin/5xuhj0ry160q40clulazy9h7d/gradle-8.13/lib/gradle-kotlin-dsl-8.13.jar!/org/gradle/kotlin/dsl/PluginDependenciesSpecScope.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-8.13-bin/5xuhj0ry160q40clulazy9h7d/gradle-8.13/lib/gradle-kotlin-dsl-extensions-8.13.jar!/org/gradle/kotlin/dsl/BuiltinPluginIdExtensionsKt.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/jbr-21.0.2/Contents/Home/lib/src.zip!/java.base/java/lang/IllegalStateException.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="McpServerSettings">
+    <option name="processedClients">
+      <set>
+        <option value="VSCode (Global)" />
+        <option value="Windsurf (Global)" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2xod8uVEREcWcrDh9h90HEWjUxY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to process.localhost:15020.executor&quot;: &quot;ProcessAttachDebug&quot;,
+    &quot;Gradle.Run IDE with Plugin.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SplitPlugin [:buildSources:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SplitPlugin [buildPlugin].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SplitPlugin [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SplitPlugin [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SplitPlugin [runIdeaInRemoteDevMode].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SplitPlugin [verifyPluginProjectConfiguration].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SplitPlugin [verifyPluginSignature].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SplitPlugin [verifyPluginStructure].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SplitPlugin [verifyPlugin].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SplitPlugin:backend [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SplitPlugin:frontend [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SplitPlugin:shared [clean].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForEAPUsers.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/Nikita.Katkov/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.platform/intellij-platform-gradle-plugin/2.9.0/166eed89ba485a5daa364f4c7226fd9b06a7f73e/intellij-platform-gradle-plugin-2.9.0.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/Nikita.Katkov/IdeaProjects/IdeaPlugins/SplitPlugin/backend/src/main/kotlin/Main.kt&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.18272425&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.3108856&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
+    <layout>
+      <window_info id="Space Code Reviews" />
+      <window_info id="Bookmarks" side_tool="true" />
+      <window_info id="Merge Requests" />
+      <window_info id="Backup and Sync History" />
+      <window_info id="Commit_Guest" show_stripe_button="false" />
+      <window_info id="Pull Requests" />
+      <window_info id="Learn" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="TypeScript" />
+      <window_info anchor="bottom" id="Profiler" />
+      <window_info anchor="bottom" id="Exception Analyzer" />
+      <window_info anchor="bottom" id="ML Completion Diagnostics" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="Evaluation Dataset" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="right" id="UI Theme Color Picker" show_stripe_button="false" />
+      <window_info anchor="right" id="PR AI Assistant" />
+      <window_info anchor="right" id="Endpoints" />
+      <window_info anchor="right" id="PsiViewer" />
+      <window_info anchor="right" id="Coverage" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="ElectroJunToolWindow" order="5" />
+    </layout>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/main/resources" />
+      <recent name="$PROJECT_DIR$/frontend" />
+    </key>
+    <key name="K2MoveDeclarationsDialog.RECENT_PACKAGE_KEY">
+      <recent name="com.example.splitplugin.frontend.jcef" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.SplitPlugin [buildPlugin]">
+    <configuration name="SplitPlugin [:buildSources:clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":buildSources:clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SplitPlugin [buildPlugin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildPlugin" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SplitPlugin:backend [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/backend" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SplitPlugin:frontend [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/frontend" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SplitPlugin:shared [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/shared" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.SplitPlugin [buildPlugin]" />
+        <item itemvalue="Gradle.SplitPlugin [:buildSources:clean]" />
+        <item itemvalue="Gradle.SplitPlugin:shared [clean]" />
+        <item itemvalue="Gradle.SplitPlugin:frontend [clean]" />
+        <item itemvalue="Gradle.SplitPlugin:backend [clean]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26199.169" />
+        <option value="bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-IU-252.26199.169" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dcab3c8f-f110-4891-9b11-eb906bf5e058" name="Changes" comment="" />
+      <created>1748608205480</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748608205480</updated>
+      <workItem from="1748608206540" duration="1708000" />
+      <workItem from="1748609925750" duration="118000" />
+      <workItem from="1748610049173" duration="111000" />
+      <workItem from="1748610166124" duration="65000" />
+      <workItem from="1748610236669" duration="959000" />
+      <workItem from="1748613058057" duration="1141000" />
+      <workItem from="1748614209383" duration="52000" />
+      <workItem from="1748614267217" duration="34000" />
+      <workItem from="1748614307087" duration="87000" />
+      <workItem from="1748614401890" duration="103000" />
+      <workItem from="1748614511004" duration="5835000" />
+      <workItem from="1748621676658" duration="3334000" />
+      <workItem from="1748627943897" duration="7674000" />
+      <workItem from="1748635685517" duration="2279000" />
+      <workItem from="1748638012250" duration="808000" />
+      <workItem from="1748863625556" duration="5737000" />
+      <workItem from="1748979043950" duration="1384000" />
+      <workItem from="1749139590270" duration="223000" />
+      <workItem from="1749218816126" duration="1325000" />
+      <workItem from="1749580819692" duration="879000" />
+      <workItem from="1749737340249" duration="629000" />
+      <workItem from="1750193896396" duration="2281000" />
+      <workItem from="1750782304131" duration="3801000" />
+      <workItem from="1750849136437" duration="784000" />
+      <workItem from="1750960481103" duration="1860000" />
+      <workItem from="1750962550205" duration="4523000" />
+      <workItem from="1751542348807" duration="188000" />
+      <workItem from="1751559223649" duration="3000" />
+      <workItem from="1751989406381" duration="1160000" />
+      <workItem from="1752140500384" duration="1393000" />
+      <workItem from="1752244110283" duration="938000" />
+      <workItem from="1754563769654" duration="453000" />
+      <workItem from="1755010176210" duration="1071000" />
+      <workItem from="1755522462323" duration="1840000" />
+      <workItem from="1755691193322" duration="46000" />
+      <workItem from="1759840289386" duration="646000" />
+      <workItem from="1759841088312" duration="2710000" />
+      <workItem from="1759930338908" duration="550000" />
+      <workItem from="1759931924079" duration="5909000" />
+      <workItem from="1759937926873" duration="779000" />
+      <workItem from="1759938712383" duration="10423000" />
+      <workItem from="1760013926710" duration="1456000" />
+      <workItem from="1760015652610" duration="13380000" />
+    </task>
+    <task id="LOCAL-00001" summary="create initial module">
+      <option name="closed" value="true" />
+      <created>1748609737760</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1748609737760</updated>
+    </task>
+    <task id="LOCAL-00002" summary="create frontend module">
+      <option name="closed" value="true" />
+      <created>1748614490608</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748614490608</updated>
+    </task>
+    <task id="LOCAL-00003" summary="create shared module">
+      <option name="closed" value="true" />
+      <created>1748614656474</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748614656474</updated>
+    </task>
+    <task id="LOCAL-00004" summary="create backend module">
+      <option name="closed" value="true" />
+      <created>1748614782541</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1748614782541</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add dependency on a shared module">
+      <option name="closed" value="true" />
+      <created>1748614827406</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1748614827406</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add rpc dependency">
+      <option name="closed" value="true" />
+      <created>1748616738121</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1748616738121</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add task to run ide with plugin installed into both backend and frontend">
+      <option name="closed" value="true" />
+      <created>1748620000107</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1748620000107</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add task to run ide with plugin installed into both backend and frontend">
+      <option name="closed" value="true" />
+      <created>1748621680283</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1748621680283</updated>
+    </task>
+    <task id="LOCAL-00009" summary="disable searchable options task">
+      <option name="closed" value="true" />
+      <created>1748622103574</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1748622103574</updated>
+    </task>
+    <task id="LOCAL-00010" summary="specify package attributes in content modules to make a single plugin classloader understand how to distinguish the corresponding classes">
+      <option name="closed" value="true" />
+      <created>1748622277136</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1748622277136</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add logs">
+      <option name="closed" value="true" />
+      <created>1748622634540</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1748622634540</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add logs">
+      <option name="closed" value="true" />
+      <created>1748622677039</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1748622677039</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add logs">
+      <option name="closed" value="true" />
+      <created>1748622697590</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1748622697590</updated>
+    </task>
+    <task id="LOCAL-00014" summary="use correct dependencies for 251 platform version">
+      <option name="closed" value="true" />
+      <created>1748628372367</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1748628372367</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add more logs">
+      <option name="closed" value="true" />
+      <created>1748629237125</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1748629237125</updated>
+    </task>
+    <task id="LOCAL-00016" summary="use serializable data example">
+      <option name="closed" value="true" />
+      <created>1748632944399</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1748632944399</updated>
+    </task>
+    <task id="LOCAL-00017" summary="enable serialization">
+      <option name="closed" value="true" />
+      <created>1748636691349</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1748636691349</updated>
+    </task>
+    <task id="LOCAL-00018" summary="fix serialisation">
+      <option name="closed" value="true" />
+      <created>1748637637850</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1748637637850</updated>
+    </task>
+    <task id="LOCAL-00019" summary="fix serialisation">
+      <option name="closed" value="true" />
+      <created>1748637734949</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1748637734949</updated>
+    </task>
+    <task id="LOCAL-00020" summary="return integers flow for better updates visibility">
+      <option name="closed" value="true" />
+      <created>1748637867730</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1748637867730</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Add a few buttons to demonstrate how UI should access and alter the backend model state">
+      <option name="closed" value="true" />
+      <created>1748867256411</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1748867256411</updated>
+    </task>
+    <task id="LOCAL-00022" summary="extract plugin versions to libs.toml">
+      <option name="closed" value="true" />
+      <created>1748868418863</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1748868418863</updated>
+    </task>
+    <task id="LOCAL-00023" summary="provide an example how plugin.xml content can be manually adjusted&#10;&#10;&#10;for simpler cases consider looking into patchPluginXml task in the intellij gradle plugin">
+      <option name="closed" value="true" />
+      <created>1749581217100</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1749581217100</updated>
+    </task>
+    <task id="LOCAL-00024" summary="trivial rpc id usage for illustration purposes">
+      <option name="closed" value="true" />
+      <created>1750195766957</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1750195766957</updated>
+    </task>
+    <task id="LOCAL-00025" summary="remove unused code">
+      <option name="closed" value="true" />
+      <created>1750782423397</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1750782423397</updated>
+    </task>
+    <task id="LOCAL-00026" summary="demo chat tool window with jcef loading problem">
+      <option name="closed" value="true" />
+      <created>1750961733578</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1750961733578</updated>
+    </task>
+    <task id="LOCAL-00027" summary="drop unused code in build scripts">
+      <option name="closed" value="true" />
+      <created>1750961808285</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1750961808285</updated>
+    </task>
+    <task id="LOCAL-00028" summary="programmatically forward ports using utils from CodeWithMe plugin">
+      <option name="closed" value="true" />
+      <created>1750962067582</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1750962067582</updated>
+    </task>
+    <task id="LOCAL-00029" summary="extract common logic to buildSrc">
+      <option name="closed" value="true" />
+      <created>1759936443298</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1759936443298</updated>
+    </task>
+    <task id="LOCAL-00030" summary="rename">
+      <option name="closed" value="true" />
+      <created>1759939050058</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1759939050058</updated>
+    </task>
+    <task id="LOCAL-00031" summary="xmx and remove duplicates">
+      <option name="closed" value="true" />
+      <created>1759939362302</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1759939362302</updated>
+    </task>
+    <task id="LOCAL-00032" summary="gitignore">
+      <option name="closed" value="true" />
+      <created>1759939419223</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1759939419223</updated>
+    </task>
+    <task id="LOCAL-00033" summary="further refactoring to reuse common logic">
+      <option name="closed" value="true" />
+      <created>1759942217617</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1759942217617</updated>
+    </task>
+    <task id="LOCAL-00034" summary="gitignore">
+      <option name="closed" value="true" />
+      <created>1759942253863</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1759942253863</updated>
+    </task>
+    <task id="LOCAL-00035" summary="add more yet unused versions">
+      <option name="closed" value="true" />
+      <created>1760011184849</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1760011184849</updated>
+    </task>
+    <task id="LOCAL-00036" summary="avoid using buildSrc, use shared build module instead to be able to acccess lib versions">
+      <option name="closed" value="true" />
+      <created>1760011638626</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1760011638626</updated>
+    </task>
+    <task id="LOCAL-00037" summary="use extracted libs">
+      <option name="closed" value="true" />
+      <created>1760015666106</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1760015666106</updated>
+    </task>
+    <task id="LOCAL-00038" summary="more versions">
+      <option name="closed" value="true" />
+      <created>1760029821222</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1760029821222</updated>
+    </task>
+    <task id="LOCAL-00039" summary="extract compile deps versions into kotlin class, becaudse tjere is no way to store them inside libs.toml">
+      <option name="closed" value="true" />
+      <created>1760031827461</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1760031827461</updated>
+    </task>
+    <task id="LOCAL-00040" summary="bumped versions, plugin does not work anymore thanks to ij gradle update">
+      <option name="closed" value="true" />
+      <created>1760038192234</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1760038192234</updated>
+    </task>
+    <task id="LOCAL-00041" summary="working, revert gradle plugin update">
+      <option name="closed" value="true" />
+      <created>1760040861831</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1760040861831</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
+    <option featureType="dependencySupport" implementationName="executable:terraform" />
+    <option featureType="dependencySupport" implementationName="java:com.jetbrains.intellij.idea:ideaIU" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="use serializable data example" />
+    <MESSAGE value="enable serialization" />
+    <MESSAGE value="fix serialisation" />
+    <MESSAGE value="return integers flow for better updates visibility" />
+    <MESSAGE value="Add a few buttons to demonstrate how UI should access and alter the backend model state" />
+    <MESSAGE value="extract plugin versions to libs.toml" />
+    <MESSAGE value="provide an example how plugin.xml content can be manually adjusted&#10;&#10;&#10;for simpler cases consider looking into patchPluginXml task in the intellij gradle plugin" />
+    <MESSAGE value="trivial rpc id usage for illustration purposes" />
+    <MESSAGE value="remove unused code" />
+    <MESSAGE value="port forwarding" />
+    <MESSAGE value="demo chat tool window with jcef loading problem" />
+    <MESSAGE value="drop unused code in build scripts" />
+    <MESSAGE value="programmatically forward ports using utils from CodeWithMe plugin" />
+    <MESSAGE value="extract common logic to buildSrc" />
+    <MESSAGE value="rename" />
+    <MESSAGE value="xmx and remove duplicates" />
+    <MESSAGE value="further refactoring to reuse common logic" />
+    <MESSAGE value="gitignore" />
+    <MESSAGE value="add more yet unused versions" />
+    <MESSAGE value="avoid using buildSrc, use shared build module instead to be able to acccess lib versions" />
+    <MESSAGE value="use extracted libs" />
+    <MESSAGE value="more versions" />
+    <MESSAGE value="extract compile deps versions into kotlin class, becaudse tjere is no way to store them inside libs.toml" />
+    <MESSAGE value="bumped versions, plugin does not work anymore thanks to ij gradle update" />
+    <MESSAGE value="working, revert gradle plugin update" />
+    <option name="LAST_COMMIT_MESSAGE" value="working, revert gradle plugin update" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/shared/shared/src/main/kotlin/Main.kt</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/shared/build.gradle.kts</url>
+          <line>4</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/shared/src/main/kotlin/com/example/splitplugin/shared/SplitPluginRpcApi.kt</url>
+          <line>20</line>
+          <properties class="com.example.splitplugin.shared.SplitPluginRpcApi">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
