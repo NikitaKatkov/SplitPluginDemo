@@ -9,6 +9,7 @@ ij-platform = "2025.1"
 junit = "4.13.2"
 opentest4j = "1.3.0"
 hamcrest = "2.2"
+kotlinx-serialization = "1.7.3"
 # Has to be in sync with IntelliJ Platform
 composeuitest = "1.8.0-alpha04"
 jewelstandalone = "0.29.0-251.27828"
@@ -22,10 +23,14 @@ intellij-platform-gradle-plugin = { module = "org.jetbrains.intellij.platform:in
 rpc-gradle-plugin = { module = "rpc:rpc.gradle.plugin", version.ref = "ij-rpc-plugin" }
 kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "ij-kotlin-jvm-plugin" }
 kotlin-serialization = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "ij-kotlin-serialization-plugin" }
+kotlinx-serialization-core = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core-jvm", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json-jvm", version.ref = "kotlinx-serialization" }
 
 [plugins]
 changelog = { id = "org.jetbrains.changelog", version.ref = "changelog" }
+intellijPlatform = { id = "org.jetbrains.intellij.platform", version.ref = "ij-gradle-plugin" }
 kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "ij-kotlin-jvm-plugin" }
+kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "ij-kotlin-serialization-plugin" }
 composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "ij-kotlin-jvm-plugin" }
 rpc = { id = "rpc", version.ref = "ij-rpc-plugin" }
 

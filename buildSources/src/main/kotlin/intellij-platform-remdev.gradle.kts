@@ -16,8 +16,8 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
-    compileOnly("org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.7.3")
-    compileOnly("org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.7.3")
+    compileOnly("org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:${SharedCompileDependencies.KOTLIN_SERIALIZATION_LIBRARY}")
+    compileOnly("org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:${SharedCompileDependencies.KOTLIN_SERIALIZATION_LIBRARY}")
 }
 
 tasks {
@@ -30,5 +30,5 @@ tasks {
 }
 
 kotlin {
-    jvmToolchain(21)
+    jvmToolchain(SharedCompileDependencies.JAVA_LANGUAGE_VERSION)
 }

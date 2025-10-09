@@ -16,8 +16,8 @@ repositories {
 
 tasks {
     withType<JavaCompile> {
-        sourceCompatibility = "21"
-        targetCompatibility = "21"
+        sourceCompatibility = "${SharedCompileDependencies.JAVA_LANGUAGE_VERSION}"
+        targetCompatibility = "${SharedCompileDependencies.JAVA_LANGUAGE_VERSION}"
     }
 
     prepareJarSearchableOptions {
