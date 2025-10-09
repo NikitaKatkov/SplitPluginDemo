@@ -1,4 +1,5 @@
 import org.jetbrains.intellij.platform.gradle.IntelliJPlatformType
+import org.jetbrains.intellij.platform.gradle.ProductMode
 import org.jetbrains.intellij.platform.gradle.tasks.aware.SplitModeAware.SplitModeTarget
 
 plugins {
@@ -10,7 +11,9 @@ version = "1.0-SNAPSHOT"
 
 dependencies {
     intellijPlatform {
-        create(IntelliJPlatformType.IntellijIdeaUltimate.code, libs.versions.ij.platform, useInstaller = false)
+        create(IntelliJPlatformType.IntellijIdeaUltimate, libs.versions.ij.platform) {
+            useInstaller = false
+        }
         pluginModule(implementation(project(":shared")))
         pluginModule(implementation(project(":frontend")))
         pluginModule(implementation(project(":backend")))
@@ -24,7 +27,7 @@ intellijPlatform {
 }
 
 tasks {
-    @Suppress("unused") 
+    @Suppress("unused")
     val runIdeaInRemoteDevMode by intellijPlatformTesting.runIde.registering {
         type = IntelliJPlatformType.IntellijIdeaUltimate
     }

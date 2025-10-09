@@ -1,4 +1,5 @@
 rootProject.name = "SplitPlugin"
+includeBuild("buildSources")
 include("shared")
 include("frontend")
 include("backend")
@@ -8,7 +9,6 @@ pluginManagement {
         gradlePluginPortal()
         maven("https://packages.jetbrains.team/maven/p/ij/intellij-dependencies/")
     }
-    includeBuild("buildSources")
 }
 
 dependencyResolutionManagement {

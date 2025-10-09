@@ -1,4 +1,5 @@
 import org.jetbrains.intellij.platform.gradle.IntelliJPlatformType
+import org.jetbrains.intellij.platform.gradle.ProductMode
 
 plugins {
     id("intellij-platform-remdev")
@@ -6,7 +7,10 @@ plugins {
 
 dependencies {
     intellijPlatform {
-        create(IntelliJPlatformType.IntellijIdeaUltimate.code, libs.versions.ij.platform, useInstaller = false)
+        create(IntelliJPlatformType.IntellijIdeaUltimate, libs.versions.ij.platform) {
+            useInstaller = false
+            productMode = ProductMode.BACKEND
+        }
         pluginModule(implementation(project(":shared")))
         bundledModule("intellij.platform.rpc.backend")
         bundledPlugin("com.jetbrains.codeWithMe")

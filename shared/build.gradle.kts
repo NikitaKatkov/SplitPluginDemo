@@ -6,6 +6,8 @@ plugins {
 
 dependencies {
     intellijPlatform {
-        create(IntelliJPlatformType.IntellijIdeaUltimate.code, libs.versions.ij.platform, useInstaller = false)
+        create(IntelliJPlatformType.IntellijIdeaUltimate, libs.versions.ij.platform) {
+            useInstaller = false
+        }
     }
 }
