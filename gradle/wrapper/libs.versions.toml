@@ -5,11 +5,17 @@ ij-kotlin-jvm-plugin = "2.1.10"
 ij-kotlin-serialization-plugin = "2.1.10"
 ij-platform = "2025.1"
 
+[libraries]
+intellij-platform-gradle-plugin = { module = "org.jetbrains.intellij.platform:intellij-platform-gradle-plugin", version.ref = "ij-gradle-plugin" }
+rpc-gradle-plugin = { module = "rpc:rpc.gradle.plugin", version.ref = "ij-rpc-plugin" }
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "ij-kotlin-jvm-plugin" }
+kotlin-serialization = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "ij-kotlin-serialization-plugin" }
+
+
 [plugins]
 #rpc-gradle-plugin = { module = "rpc:rpc.gradle.plugin", version.ref = "ij-rpc-plugin" }
 #kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "ij-kotlin-jvm-plugin" }
-#kotlin-serialization = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "ij-kotlin-serialization-plugin" }
-ijPlatformGradlePlugin = { id = "org.jetbrains.intellij.platform", version.ref = "ij-gradle-plugin" }
-ijRpcPlugin = { id = "rpc.gradle.plugin", version.ref = "ij-rpc-plugin" }
+#kotlin-serialization-plugin = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "ij-kotlin-serialization-plugin" }
+ij-platform-gradle-plugin = { id = "org.jetbrains.intellij.platform", version.ref = "ij-gradle-plugin" }
 ij-kotlin-jvm-plugin = { id = "org.jetbrains.kotlin.jvm", version.ref = "ij-kotlin-jvm-plugin" }
 ij-kotlin-serialization-plugin = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "ij-kotlin-serialization-plugin" }
