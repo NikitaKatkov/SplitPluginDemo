@@ -1,5 +1,4 @@
 import org.jetbrains.intellij.platform.gradle.IntelliJPlatformType
-import org.jetbrains.intellij.platform.gradle.ProductMode
 import org.jetbrains.intellij.platform.gradle.tasks.aware.SplitModeAware.SplitModeTarget
 
 plugins {
@@ -10,13 +9,15 @@ group = "com.example"
 version = "1.0-SNAPSHOT"
 
 dependencies {
+    implementation(project(":shared"))
+    implementation(project(":frontend"))
+    implementation(project(":backend"))
+
     intellijPlatform {
-        create(IntelliJPlatformType.IntellijIdeaUltimate, libs.versions.ij.platform) {
-            useInstaller = false
-        }
-        pluginModule(implementation(project(":shared")))
-        pluginModule(implementation(project(":frontend")))
-        pluginModule(implementation(project(":backend")))
+        create(IntelliJPlatformType.IntellijIdeaUltimate, libs.versions.ij.platform, useInstaller = false)
+        pluginModule(project(":shared"))
+        pluginModule(project(":frontend"))
+        pluginModule(project(":backend"))
         testFramework(org.jetbrains.intellij.platform.gradle.TestFrameworkType.Platform)
     }
 }
