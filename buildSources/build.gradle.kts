@@ -9,8 +9,8 @@ repositories {
 }
 
 dependencies {
-    implementation(libs.intellij.platform.gradle.plugin)
-    implementation(libs.rpc.gradle.plugin)
-    implementation(libs.kotlin.gradle.plugin)
+    implementation(libs.intellij.platform.gradle)
+    implementation(libs.rpc.gradle)
+    implementation(libs.kotlin.gradle)
     implementation(libs.kotlin.serialization)
 }

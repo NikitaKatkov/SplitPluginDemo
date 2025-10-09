@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcab3c8f-f110-4891-9b11-eb906bf5e058" name="Changes" comment="working, revert gradle plugin update" />
+    <list default="true" id="dcab3c8f-f110-4891-9b11-eb906bf5e058" name="Changes" comment="trash">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSources/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/buildSources/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/libs.versions.toml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,12 +57,20 @@
                 <item name="SplitPlugin" type="f1a62948:ProjectNode" />
                 <item name="SplitPlugin" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SplitPlugin" type="f1a62948:ProjectNode" />
+                <item name="SplitPlugin" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="intellij platform" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="SplitPlugin" type="f1a62948:ProjectNode" />
-                <item name="buildSources" type="2d1252cf:ModuleNode" />
+                <item name="SplitPlugin" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
               </path>
             </expand>
             <select />
@@ -126,6 +138,7 @@
     &quot;Attach to process.localhost:15020.executor&quot;: &quot;ProcessAttachDebug&quot;,
     &quot;Gradle.Run IDE with Plugin.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.SplitPlugin [:buildSources:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SplitPlugin [buildDependents].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.SplitPlugin [buildPlugin].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.SplitPlugin [build].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.SplitPlugin [clean].executor&quot;: &quot;Run&quot;,
@@ -206,7 +219,7 @@
       <recent name="com.example.splitplugin.frontend.jcef" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SplitPlugin [buildPlugin]">
+  <component name="RunManager" selected="Gradle.SplitPlugin [runIdeaInRemoteDevMode]">
     <configuration name="SplitPlugin [:buildSources:clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -219,6 +232,28 @@
         <option name="taskNames">
           <list>
             <option value=":buildSources:clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SplitPlugin [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildDependents" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -251,10 +286,10 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SplitPlugin:backend [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SplitPlugin [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/backend" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -273,10 +308,10 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SplitPlugin:frontend [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SplitPlugin [runIdeaInRemoteDevMode]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/frontend" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -284,29 +319,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="SplitPlugin:shared [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/shared" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
+            <option value="runIdeaInRemoteDevMode" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -319,11 +332,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SplitPlugin [runIdeaInRemoteDevMode]" />
         <item itemvalue="Gradle.SplitPlugin [buildPlugin]" />
+        <item itemvalue="Gradle.SplitPlugin [clean]" />
+        <item itemvalue="Gradle.SplitPlugin [buildDependents]" />
         <item itemvalue="Gradle.SplitPlugin [:buildSources:clean]" />
-        <item itemvalue="Gradle.SplitPlugin:shared [clean]" />
-        <item itemvalue="Gradle.SplitPlugin:frontend [clean]" />
-        <item itemvalue="Gradle.SplitPlugin:backend [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -384,7 +397,7 @@
       <workItem from="1759937926873" duration="779000" />
       <workItem from="1759938712383" duration="10423000" />
       <workItem from="1760013926710" duration="1456000" />
-      <workItem from="1760015652610" duration="13380000" />
+      <workItem from="1760015652610" duration="14095000" />
     </task>
     <task id="LOCAL-00001" summary="create initial module">
       <option name="closed" value="true" />
@@ -714,7 +727,23 @@
       <option name="project" value="LOCAL" />
       <updated>1760040861831</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="trash">
+      <option name="closed" value="true" />
+      <created>1760041192387</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1760041192387</updated>
+    </task>
+    <task id="LOCAL-00043" summary="trash">
+      <option name="closed" value="true" />
+      <created>1760041243979</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1760041243979</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -770,7 +799,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use serializable data example" />
     <MESSAGE value="enable serialization" />
     <MESSAGE value="fix serialisation" />
     <MESSAGE value="return integers flow for better updates visibility" />
@@ -795,7 +823,8 @@
     <MESSAGE value="extract compile deps versions into kotlin class, becaudse tjere is no way to store them inside libs.toml" />
     <MESSAGE value="bumped versions, plugin does not work anymore thanks to ij gradle update" />
     <MESSAGE value="working, revert gradle plugin update" />
-    <option name="LAST_COMMIT_MESSAGE" value="working, revert gradle plugin update" />
+    <MESSAGE value="trash" />
+    <option name="LAST_COMMIT_MESSAGE" value="trash" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
