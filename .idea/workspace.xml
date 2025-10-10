@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcab3c8f-f110-4891-9b11-eb906bf5e058" name="Changes" comment=".idea">
+    <list default="true" id="dcab3c8f-f110-4891-9b11-eb906bf5e058" name="Changes" comment="workspace">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/kotlin/com/example/splitplugin/backend/BackendRpcApiImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/kotlin/com/example/splitplugin/backend/BackendRpcApiImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/SplitPlugin.backend.main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/SplitPlugin.backend.main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main/kotlin/com/example/splitplugin/frontend/FrontendTestToolwindowFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/kotlin/com/example/splitplugin/frontend/FrontendTestToolwindowFactory.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main/kotlin/com/example/splitplugin/frontend/SimpleInteractivePanel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/kotlin/com/example/splitplugin/frontend/SimpleInteractivePanel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/SplitPlugin.frontend.main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/SplitPlugin.frontend.main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/libs.versions.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/src/main/kotlin/com/example/splitplugin/shared/SplitPluginRpcApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/main/kotlin/com/example/splitplugin/shared/SplitPluginRpcApi.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/src/main/resources/SplitPlugin.shared.main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/main/resources/SplitPlugin.shared.main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,6 +142,7 @@
     "Gradle.SplitPlugin [buildPlugin].executor": "Run",
     "Gradle.SplitPlugin [build].executor": "Run",
     "Gradle.SplitPlugin [clean].executor": "Run",
+    "Gradle.SplitPlugin [publishPlugin].executor": "Run",
     "Gradle.SplitPlugin [runIde].executor": "Run",
     "Gradle.SplitPlugin [runIdeaInRemoteDevMode].executor": "Run",
     "Gradle.SplitPlugin [verifyPluginProjectConfiguration].executor": "Run",
@@ -224,29 +221,7 @@
       <recent name="com.example.splitplugin.frontend.jcef" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SplitPlugin [buildPlugin]">
-    <configuration name="SplitPlugin [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="buildDependents" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.SplitPlugin [runIdeaInRemoteDevMode]">
     <configuration name="SplitPlugin [buildPlugin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -281,6 +256,28 @@
         <option name="taskNames">
           <list>
             <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SplitPlugin [publishPlugin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishPlugin" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -337,11 +334,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SplitPlugin [runIdeaInRemoteDevMode]" />
         <item itemvalue="Gradle.SplitPlugin [buildPlugin]" />
         <item itemvalue="Gradle.SplitPlugin [clean]" />
-        <item itemvalue="Gradle.SplitPlugin [runIdeaInRemoteDevMode]" />
         <item itemvalue="Gradle.SplitPlugin [runIde]" />
-        <item itemvalue="Gradle.SplitPlugin [buildDependents]" />
+        <item itemvalue="Gradle.SplitPlugin [publishPlugin]" />
       </list>
     </recent_temporary>
   </component>
@@ -764,7 +761,39 @@
       <option name="project" value="LOCAL" />
       <updated>1760102175194</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="clean up unnecessary code samples">
+      <option name="closed" value="true" />
+      <created>1760108324097</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1760108324097</updated>
+    </task>
+    <task id="LOCAL-00047" summary="clean up unnecessary versions">
+      <option name="closed" value="true" />
+      <created>1760108343316</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1760108343317</updated>
+    </task>
+    <task id="LOCAL-00048" summary="get rid of package attributes, make sure the plugin modules are packaged into separate jars">
+      <option name="closed" value="true" />
+      <created>1760108391380</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1760108391380</updated>
+    </task>
+    <task id="LOCAL-00049" summary="workspace">
+      <option name="closed" value="true" />
+      <created>1760108401331</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1760108401331</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -820,10 +849,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="return integers flow for better updates visibility" />
-    <MESSAGE value="Add a few buttons to demonstrate how UI should access and alter the backend model state" />
-    <MESSAGE value="extract plugin versions to libs.toml" />
-    <MESSAGE value="provide an example how plugin.xml content can be manually adjusted&#10;&#10;&#10;for simpler cases consider looking into patchPluginXml task in the intellij gradle plugin" />
     <MESSAGE value="trivial rpc id usage for illustration purposes" />
     <MESSAGE value="remove unused code" />
     <MESSAGE value="port forwarding" />
@@ -845,7 +870,11 @@
     <MESSAGE value="trash" />
     <MESSAGE value="&quot;Refactor build scripts: update IntelliJ Gradle plugin to v2.9.0, refactor dependency structure, and centralize 'buildSearchableOptions' configuration.&quot;" />
     <MESSAGE value=".idea" />
-    <option name="LAST_COMMIT_MESSAGE" value=".idea" />
+    <MESSAGE value="clean up unnecessary code samples" />
+    <MESSAGE value="clean up unnecessary versions" />
+    <MESSAGE value="get rid of package attributes, make sure the plugin modules are packaged into separate jars" />
+    <MESSAGE value="workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -857,7 +886,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/shared/build.gradle.kts</url>
-          <line>4</line>
+          <line>5</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
