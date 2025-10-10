@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcab3c8f-f110-4891-9b11-eb906bf5e058" name="Changes" comment="&quot;Refactor build scripts: update IntelliJ Gradle plugin to v2.9.0, refactor dependency structure, and centralize 'buildSearchableOptions' configuration.&quot;">
+    <list default="true" id="dcab3c8f-f110-4891-9b11-eb906bf5e058" name="Changes" comment=".idea">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/kotlin/com/example/splitplugin/backend/BackendRpcApiImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/kotlin/com/example/splitplugin/backend/BackendRpcApiImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/SplitPlugin.backend.main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/SplitPlugin.backend.main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSources/src/main/kotlin/intellij-platform-main.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/buildSources/src/main/kotlin/intellij-platform-main.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSources/src/main/kotlin/intellij-platform-remdev.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/buildSources/src/main/kotlin/intellij-platform-remdev.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/kotlin/com/example/splitplugin/frontend/FrontendTestToolwindowFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/kotlin/com/example/splitplugin/frontend/FrontendTestToolwindowFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/kotlin/com/example/splitplugin/frontend/SimpleInteractivePanel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/kotlin/com/example/splitplugin/frontend/SimpleInteractivePanel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/SplitPlugin.frontend.main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/SplitPlugin.frontend.main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle/wrapper/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/libs.versions.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/main/kotlin/com/example/splitplugin/shared/SplitPluginRpcApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/main/kotlin/com/example/splitplugin/shared/SplitPluginRpcApi.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/main/resources/SplitPlugin.shared.main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/main/resources/SplitPlugin.shared.main.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,6 +146,7 @@
     "Gradle.SplitPlugin [buildPlugin].executor": "Run",
     "Gradle.SplitPlugin [build].executor": "Run",
     "Gradle.SplitPlugin [clean].executor": "Run",
+    "Gradle.SplitPlugin [runIde].executor": "Run",
     "Gradle.SplitPlugin [runIdeaInRemoteDevMode].executor": "Run",
     "Gradle.SplitPlugin [verifyPluginProjectConfiguration].executor": "Run",
     "Gradle.SplitPlugin [verifyPluginSignature].executor": "Run",
@@ -221,29 +224,7 @@
       <recent name="com.example.splitplugin.frontend.jcef" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SplitPlugin [runIdeaInRemoteDevMode]">
-    <configuration name="SplitPlugin [:buildSources:clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":buildSources:clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.SplitPlugin [buildPlugin]">
     <configuration name="SplitPlugin [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -310,12 +291,34 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SplitPlugin [runIdeaInRemoteDevMode]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SplitPlugin [runIde]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runIde" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SplitPlugin [runIdeaInRemoteDevMode]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--info" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -334,11 +337,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SplitPlugin [runIdeaInRemoteDevMode]" />
         <item itemvalue="Gradle.SplitPlugin [buildPlugin]" />
         <item itemvalue="Gradle.SplitPlugin [clean]" />
+        <item itemvalue="Gradle.SplitPlugin [runIdeaInRemoteDevMode]" />
+        <item itemvalue="Gradle.SplitPlugin [runIde]" />
         <item itemvalue="Gradle.SplitPlugin [buildDependents]" />
-        <item itemvalue="Gradle.SplitPlugin [:buildSources:clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -745,7 +748,23 @@
       <option name="project" value="LOCAL" />
       <updated>1760041243979</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="&quot;Refactor build scripts: update IntelliJ Gradle plugin to v2.9.0, refactor dependency structure, and centralize 'buildSearchableOptions' configuration.&quot;">
+      <option name="closed" value="true" />
+      <created>1760102157141</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1760102157141</updated>
+    </task>
+    <task id="LOCAL-00045" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1760102175194</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1760102175194</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -801,8 +820,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="enable serialization" />
-    <MESSAGE value="fix serialisation" />
     <MESSAGE value="return integers flow for better updates visibility" />
     <MESSAGE value="Add a few buttons to demonstrate how UI should access and alter the backend model state" />
     <MESSAGE value="extract plugin versions to libs.toml" />
@@ -826,7 +843,9 @@
     <MESSAGE value="bumped versions, plugin does not work anymore thanks to ij gradle update" />
     <MESSAGE value="working, revert gradle plugin update" />
     <MESSAGE value="trash" />
-    <option name="LAST_COMMIT_MESSAGE" value="trash" />
+    <MESSAGE value="&quot;Refactor build scripts: update IntelliJ Gradle plugin to v2.9.0, refactor dependency structure, and centralize 'buildSearchableOptions' configuration.&quot;" />
+    <MESSAGE value=".idea" />
+    <option name="LAST_COMMIT_MESSAGE" value=".idea" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -840,15 +859,6 @@
           <url>file://$PROJECT_DIR$/shared/build.gradle.kts</url>
           <line>4</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-function">
-          <url>file://$PROJECT_DIR$/shared/src/main/kotlin/com/example/splitplugin/shared/SplitPluginRpcApi.kt</url>
-          <line>20</line>
-          <properties class="com.example.splitplugin.shared.SplitPluginRpcApi">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
