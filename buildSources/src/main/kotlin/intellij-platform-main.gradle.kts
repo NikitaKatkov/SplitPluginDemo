@@ -7,7 +7,6 @@ plugins {
 repositories {
     mavenCentral()
     intellijPlatform {
-        snapshots()
         defaultRepositories()
     }
 }
@@ -17,11 +16,8 @@ tasks {
         sourceCompatibility = "${SharedCompileDependencies.JAVA_LANGUAGE_VERSION}"
         targetCompatibility = "${SharedCompileDependencies.JAVA_LANGUAGE_VERSION}"
     }
+}
 
-    prepareJarSearchableOptions {
-        enabled = false
-    }
-    buildSearchableOptions {
-        enabled = false
-    }
+intellijPlatform {
+    buildSearchableOptions = false
 }

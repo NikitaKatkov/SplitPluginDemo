@@ -5,9 +5,10 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":shared"))
     intellijPlatform {
-        create(IntelliJPlatformType.IntellijIdeaUltimate, libs.versions.ij.platform, useInstaller = false)
-        pluginModule(project(":shared"))
+        create(IntelliJPlatformType.IntellijIdeaUltimate, libs.versions.ij.platform) {
+            useInstaller = false
+        }
+        pluginModule(implementation(project(":shared")))
     }
 }

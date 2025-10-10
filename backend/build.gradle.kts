@@ -5,12 +5,14 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":shared"))
     intellijPlatform {
-        create(IntelliJPlatformType.IntellijIdeaUltimate, libs.versions.ij.platform, useInstaller = false)
-        pluginModule(project(":shared"))
+        create(IntelliJPlatformType.IntellijIdeaUltimate, libs.versions.ij.platform) {
+            useInstaller = false
+        }
+        (implementation(project(":shared")) {
+            exclude("org.jetbrains.kotlin", "kotlin-stdlib")
+        })
         bundledModule("intellij.platform.rpc.backend")
         bundledPlugin("com.jetbrains.codeWithMe")
     }
 }
-

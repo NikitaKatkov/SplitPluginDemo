@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcab3c8f-f110-4891-9b11-eb906bf5e058" name="Changes" comment="trash">
+    <list default="true" id="dcab3c8f-f110-4891-9b11-eb906bf5e058" name="Changes" comment="&quot;Refactor build scripts: update IntelliJ Gradle plugin to v2.9.0, refactor dependency structure, and centralize 'buildSearchableOptions' configuration.&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSources/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/buildSources/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSources/src/main/kotlin/intellij-platform-main.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/buildSources/src/main/kotlin/intellij-platform-main.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSources/src/main/kotlin/intellij-platform-remdev.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/buildSources/src/main/kotlin/intellij-platform-remdev.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle/wrapper/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/libs.versions.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,11 +113,8 @@
     &quot;accountId&quot;: &quot;3e7f81e9-fbaa-41e3-a851-35a7a1c00b67&quot;
   }
 }</component>
-  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="$USER_HOME$/.gradle/wrapper/dists/gradle-8.13-bin/5xuhj0ry160q40clulazy9h7d/gradle-8.13" javaHome="$USER_HOME$/Library/Java/JavaVirtualMachines/jbr-21.0.2/Contents/Home" gradleVersion="8.13" />
+  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="$USER_HOME$/.gradle/wrapper/dists/gradle-8.13-bin/5xuhj0ry160q40clulazy9h7d/gradle-8.13" javaHome="$USER_HOME$/Library/Java/JavaVirtualMachines/openjdk-23.0.1/Contents/Home" gradleVersion="8.13" />
   <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.platform/intellij-platform-gradle-plugin/2.6.0/44f08a6144405aa5a532413e50c5022f2c053adc/intellij-platform-gradle-plugin-2.6.0-sources.jar!/org/jetbrains/intellij/platform/gradle/IntelliJPlatformType.kt" root0="SKIP_INSPECTION" />
-    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.platform/intellij-platform-gradle-plugin/2.6.0/44f08a6144405aa5a532413e50c5022f2c053adc/intellij-platform-gradle-plugin-2.6.0-sources.jar!/org/jetbrains/intellij/platform/gradle/extensions/IntelliJPlatformTestingExtension.kt" root0="SKIP_INSPECTION" />
-    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.platform/intellij-platform-gradle-plugin/2.6.0/d138908fb8581002d468e5f33edfc3655b9ede96/intellij-platform-gradle-plugin-2.6.0.jar!/org/jetbrains/intellij/platform/gradle/IntelliJPlatformType.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-8.13-bin/5xuhj0ry160q40clulazy9h7d/gradle-8.13/lib/gradle-kotlin-dsl-8.13.jar!/org/gradle/kotlin/dsl/PluginDependenciesSpecScope.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-8.13-bin/5xuhj0ry160q40clulazy9h7d/gradle-8.13/lib/gradle-kotlin-dsl-extensions-8.13.jar!/org/gradle/kotlin/dsl/BuiltinPluginIdExtensionsKt.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/jbr-21.0.2/Contents/Home/lib/src.zip!/java.base/java/lang/IllegalStateException.java" root0="SKIP_INSPECTION" />
@@ -133,43 +135,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Attach to process.localhost:15020.executor&quot;: &quot;ProcessAttachDebug&quot;,
-    &quot;Gradle.Run IDE with Plugin.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SplitPlugin [:buildSources:clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SplitPlugin [buildDependents].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SplitPlugin [buildPlugin].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SplitPlugin [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SplitPlugin [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SplitPlugin [runIdeaInRemoteDevMode].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SplitPlugin [verifyPluginProjectConfiguration].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SplitPlugin [verifyPluginSignature].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SplitPlugin [verifyPluginStructure].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SplitPlugin [verifyPlugin].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SplitPlugin:backend [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SplitPlugin:frontend [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SplitPlugin:shared [clean].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForEAPUsers.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/Nikita.Katkov/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.platform/intellij-platform-gradle-plugin/2.9.0/166eed89ba485a5daa364f4c7226fd9b06a7f73e/intellij-platform-gradle-plugin-2.9.0.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/Nikita.Katkov/IdeaProjects/IdeaPlugins/SplitPlugin/backend/src/main/kotlin/Main.kt&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.18272425&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.3108856&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Attach to process.localhost:15020.executor": "ProcessAttachDebug",
+    "Gradle.Run IDE with Plugin.executor": "Run",
+    "Gradle.SplitPlugin [:buildSources:clean].executor": "Run",
+    "Gradle.SplitPlugin [buildDependents].executor": "Run",
+    "Gradle.SplitPlugin [buildPlugin].executor": "Run",
+    "Gradle.SplitPlugin [build].executor": "Run",
+    "Gradle.SplitPlugin [clean].executor": "Run",
+    "Gradle.SplitPlugin [runIdeaInRemoteDevMode].executor": "Run",
+    "Gradle.SplitPlugin [verifyPluginProjectConfiguration].executor": "Run",
+    "Gradle.SplitPlugin [verifyPluginSignature].executor": "Run",
+    "Gradle.SplitPlugin [verifyPluginStructure].executor": "Run",
+    "Gradle.SplitPlugin [verifyPlugin].executor": "Run",
+    "Gradle.SplitPlugin:backend [clean].executor": "Run",
+    "Gradle.SplitPlugin:frontend [clean].executor": "Run",
+    "Gradle.SplitPlugin:shared [clean].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForEAPUsers.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/Nikita.Katkov/Desktop/_Refactor_build_scripts__update_IntelliJ_Gradle_plugin_to_v2_9_0,_refactor_dependency_stru.patch",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/Nikita.Katkov/IdeaProjects/IdeaPlugins/SplitPlugin/backend/src/main/kotlin/Main.kt",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.18272425",
+    "project.structure.side.proportion": "0.3108856",
+    "settings.editor.selected.configurable": "advanced.settings",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
     <layout>
       <window_info id="Space Code Reviews" />
