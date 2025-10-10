@@ -14,9 +14,9 @@ dependencies {
         create(IntelliJPlatformType.IntellijIdeaUltimate, libs.versions.ij.platform) {
             useInstaller = false
         }
-        pluginComposedModule(implementation(project(":shared")))
-        pluginComposedModule(implementation(project(":frontend")))
-        pluginComposedModule(implementation(project(":backend")))
+        pluginModule(implementation(project(":shared")))
+        pluginModule(implementation(project(":frontend")))
+        pluginModule(implementation(project(":backend")))
         testFramework(TestFrameworkType.Platform)
     }
 }

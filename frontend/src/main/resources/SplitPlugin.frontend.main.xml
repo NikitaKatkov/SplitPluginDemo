@@ -1,6 +1,5 @@
-<idea-plugin package="com.example.splitplugin.frontend">
+<idea-plugin>
     <dependencies>
-        <plugin id="com.intellij.platform.experimental.frontend"/>
         <module name="intellij.platform.frontend"/>
         <module name="SplitPlugin.shared.main"/>
     </dependencies>
