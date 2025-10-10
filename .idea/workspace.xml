@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcab3c8f-f110-4891-9b11-eb906bf5e058" name="Changes" comment="add version, remove depends, try fixing runtime content modules resolve">
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/SplitPlugin.backend.main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/SplitPlugin.backend.main.xml" afterDir="false" />
+    <list default="true" id="dcab3c8f-f110-4891-9b11-eb906bf5e058" name="Changes" comment="explicit backend dependency">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/SplitPlugin.backend.main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/backend.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/SplitPlugin.frontend.main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/frontend.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/main/resources/SplitPlugin.shared.main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/main/resources/shared.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -396,14 +400,6 @@
       <workItem from="1760013926710" duration="1456000" />
       <workItem from="1760015652610" duration="14095000" />
     </task>
-    <task id="LOCAL-00002" summary="create frontend module">
-      <option name="closed" value="true" />
-      <created>1748614490608</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1748614490608</updated>
-    </task>
     <task id="LOCAL-00003" summary="create shared module">
       <option name="closed" value="true" />
       <created>1748614656474</created>
@@ -788,7 +784,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760111689887</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="explicit backend dependency">
+      <option name="closed" value="true" />
+      <created>1760111801197</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1760111801197</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -844,7 +848,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="remove unused code" />
     <MESSAGE value="port forwarding" />
     <MESSAGE value="demo chat tool window with jcef loading problem" />
     <MESSAGE value="drop unused code in build scripts" />
@@ -869,7 +872,8 @@
     <MESSAGE value="get rid of package attributes, make sure the plugin modules are packaged into separate jars" />
     <MESSAGE value="workspace" />
     <MESSAGE value="add version, remove depends, try fixing runtime content modules resolve" />
-    <option name="LAST_COMMIT_MESSAGE" value="add version, remove depends, try fixing runtime content modules resolve" />
+    <MESSAGE value="explicit backend dependency" />
+    <option name="LAST_COMMIT_MESSAGE" value="explicit backend dependency" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

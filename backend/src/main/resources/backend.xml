@@ -2,7 +2,7 @@
     <dependencies>
         <module name="intellij.platform.backend"/>
         <module name="intellij.platform.kernel.backend"/>
-        <module name="SplitPlugin.shared.main"/>
+        <module name="shared"/>
     </dependencies>
 
     <extensions defaultExtensionNs="com.intellij">
