@@ -2,10 +2,7 @@ package com.example.splitplugin.frontend
 
 import com.example.splitplugin.shared.SplitPluginRpcApi
 import com.example.splitplugin.shared.UpdateBackendStateRequest
-import com.intellij.ide.vfs.rpcId
 import com.intellij.openapi.diagnostic.logger
-import com.intellij.openapi.fileEditor.FileEditorManager
-import com.intellij.openapi.project.ProjectManager
 import com.intellij.util.ui.components.BorderLayoutPanel
 import kotlinx.coroutines.CoroutineStart
 import kotlinx.coroutines.launch
@@ -23,26 +20,10 @@ internal class SimpleInteractivePanel : BorderLayoutPanel() {
             addActionListener {
                 csProvider.scope.launch {
                     SplitPluginRpcApi.getInstanceAsync()
-                        .updateBackendState(
-                            UpdateBackendStateRequest.IncreaseCounter(
-                                1000, FileEditorManager.getInstance(
-                                    ProjectManager.getInstance().openProjects.single()
-                                ).selectedEditor?.file?.rpcId()
-                            )
-                        )
+                        .updateBackendState(UpdateBackendStateRequest.IncreaseCounter(1000))
                 }
             }
         }
-        val buttonForwardPort = JButton().apply {
-            text = "Forward port 8080"
-            addActionListener {
-                csProvider.scope.launch {
-                    SplitPluginRpcApi.getInstanceAsync()
-                        .updateBackendState(UpdateBackendStateRequest.StartPortForwarding(8080))
-                }
-            }
-        }
-
         val buttonDecreaseCounter = JButton().apply {
             text = "Decrease counter"
             addActionListener {
@@ -54,7 +35,6 @@ internal class SimpleInteractivePanel : BorderLayoutPanel() {
         }
         val buttonsPanel = BorderLayoutPanel()
         buttonsPanel.addToLeft(buttonDecreaseCounter)
-        buttonsPanel.addToCenter(buttonForwardPort)
         buttonsPanel.addToRight(buttonIncreaseCounter)
 
         addToCenter(label)
