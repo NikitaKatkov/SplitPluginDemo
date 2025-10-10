@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcab3c8f-f110-4891-9b11-eb906bf5e058" name="Changes" comment="workspace">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
+    <list default="true" id="dcab3c8f-f110-4891-9b11-eb906bf5e058" name="Changes" comment="add version, remove depends, try fixing runtime content modules resolve">
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/SplitPlugin.backend.main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/SplitPlugin.backend.main.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -401,14 +396,6 @@
       <workItem from="1760013926710" duration="1456000" />
       <workItem from="1760015652610" duration="14095000" />
     </task>
-    <task id="LOCAL-00001" summary="create initial module">
-      <option name="closed" value="true" />
-      <created>1748609737760</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1748609737760</updated>
-    </task>
     <task id="LOCAL-00002" summary="create frontend module">
       <option name="closed" value="true" />
       <created>1748614490608</created>
@@ -793,7 +780,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760108401331</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="add version, remove depends, try fixing runtime content modules resolve">
+      <option name="closed" value="true" />
+      <created>1760111689886</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1760111689887</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -849,7 +844,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="trivial rpc id usage for illustration purposes" />
     <MESSAGE value="remove unused code" />
     <MESSAGE value="port forwarding" />
     <MESSAGE value="demo chat tool window with jcef loading problem" />
@@ -874,7 +868,8 @@
     <MESSAGE value="clean up unnecessary versions" />
     <MESSAGE value="get rid of package attributes, make sure the plugin modules are packaged into separate jars" />
     <MESSAGE value="workspace" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace" />
+    <MESSAGE value="add version, remove depends, try fixing runtime content modules resolve" />
+    <option name="LAST_COMMIT_MESSAGE" value="add version, remove depends, try fixing runtime content modules resolve" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
