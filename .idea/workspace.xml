@@ -4,15 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcab3c8f-f110-4891-9b11-eb906bf5e058" name="Changes" comment="rename xmls according to their primary module names to make runtime resolve work">
+    <list default="true" id="dcab3c8f-f110-4891-9b11-eb906bf5e058" name="Changes" comment="without frontend dependency it works">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/backend.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/backend.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/frontend.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/frontend.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSources/src/main/kotlin/intellij-platform-remdev.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/buildSources/src/main/kotlin/intellij-platform-remdev.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="542" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -69,8 +75,7 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="SplitPlugin" type="f1a62948:ProjectNode" />
-                <item name="SplitPlugin" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="buildSources" type="2d1252cf:ModuleNode" />
               </path>
             </expand>
             <select />
@@ -130,45 +135,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Attach to process.localhost:15020.executor": "ProcessAttachDebug",
-    "Gradle.Run IDE with Plugin.executor": "Run",
-    "Gradle.SplitPlugin [:buildSources:clean].executor": "Run",
-    "Gradle.SplitPlugin [buildDependents].executor": "Run",
-    "Gradle.SplitPlugin [buildPlugin].executor": "Run",
-    "Gradle.SplitPlugin [build].executor": "Run",
-    "Gradle.SplitPlugin [clean].executor": "Run",
-    "Gradle.SplitPlugin [publishPlugin].executor": "Run",
-    "Gradle.SplitPlugin [runIde].executor": "Run",
-    "Gradle.SplitPlugin [runIdeaInRemoteDevMode].executor": "Run",
-    "Gradle.SplitPlugin [verifyPluginProjectConfiguration].executor": "Run",
-    "Gradle.SplitPlugin [verifyPluginSignature].executor": "Run",
-    "Gradle.SplitPlugin [verifyPluginStructure].executor": "Run",
-    "Gradle.SplitPlugin [verifyPlugin].executor": "Run",
-    "Gradle.SplitPlugin:backend [clean].executor": "Run",
-    "Gradle.SplitPlugin:frontend [clean].executor": "Run",
-    "Gradle.SplitPlugin:shared [clean].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForEAPUsers.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/Nikita.Katkov/Desktop/_Refactor_build_scripts__update_IntelliJ_Gradle_plugin_to_v2_9_0,_refactor_dependency_stru.patch",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/Nikita.Katkov/IdeaProjects/IdeaPlugins/SplitPlugin/backend/src/main/kotlin/Main.kt",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.18272425",
-    "project.structure.side.proportion": "0.3108856",
-    "settings.editor.selected.configurable": "advanced.settings",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to process.localhost:15020.executor&quot;: &quot;ProcessAttachDebug&quot;,
+    &quot;Gradle.Run IDE with Plugin.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SplitPlugin [:buildSources:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SplitPlugin [buildDependents].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SplitPlugin [buildPlugin].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SplitPlugin [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SplitPlugin [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SplitPlugin [publishPlugin].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SplitPlugin [runIde].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SplitPlugin [runIdeaInRemoteDevMode].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SplitPlugin [verifyPluginProjectConfiguration].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SplitPlugin [verifyPluginSignature].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SplitPlugin [verifyPluginStructure].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SplitPlugin [verifyPlugin].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SplitPlugin:backend [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SplitPlugin:frontend [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SplitPlugin:shared [clean].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForEAPUsers.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/Nikita.Katkov/Desktop/_Refactor_build_scripts__update_IntelliJ_Gradle_plugin_to_v2_9_0,_refactor_dependency_stru.patch&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/Nikita.Katkov/IdeaProjects/IdeaPlugins/SplitPlugin/backend/src/main/kotlin/Main.kt&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.18272425&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.3108856&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
     <layout>
       <window_info id="Space Code Reviews" />
@@ -333,8 +338,8 @@
       <list>
         <item itemvalue="Gradle.SplitPlugin [runIdeaInRemoteDevMode]" />
         <item itemvalue="Gradle.SplitPlugin [buildPlugin]" />
-        <item itemvalue="Gradle.SplitPlugin [clean]" />
         <item itemvalue="Gradle.SplitPlugin [runIde]" />
+        <item itemvalue="Gradle.SplitPlugin [clean]" />
         <item itemvalue="Gradle.SplitPlugin [publishPlugin]" />
       </list>
     </recent_temporary>
@@ -397,14 +402,12 @@
       <workItem from="1759938712383" duration="10423000" />
       <workItem from="1760013926710" duration="1456000" />
       <workItem from="1760015652610" duration="14095000" />
-    </task>
-    <task id="LOCAL-00004" summary="create backend module">
-      <option name="closed" value="true" />
-      <created>1748614782541</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1748614782541</updated>
+      <workItem from="1760202827415" duration="68000" />
+      <workItem from="1760448763595" duration="383000" />
+      <workItem from="1760449150767" duration="41000" />
+      <workItem from="1760449252851" duration="998000" />
+      <workItem from="1760450257618" duration="18000" />
+      <workItem from="1760450409146" duration="2713000" />
     </task>
     <task id="LOCAL-00005" summary="add dependency on a shared module">
       <option name="closed" value="true" />
@@ -790,7 +793,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760112484515</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="without frontend dependency it works">
+      <option name="closed" value="true" />
+      <created>1760181016962</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1760181016962</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -846,7 +857,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="demo chat tool window with jcef loading problem" />
     <MESSAGE value="drop unused code in build scripts" />
     <MESSAGE value="programmatically forward ports using utils from CodeWithMe plugin" />
     <MESSAGE value="extract common logic to buildSrc" />
@@ -871,7 +881,8 @@
     <MESSAGE value="add version, remove depends, try fixing runtime content modules resolve" />
     <MESSAGE value="explicit backend dependency" />
     <MESSAGE value="rename xmls according to their primary module names to make runtime resolve work" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename xmls according to their primary module names to make runtime resolve work" />
+    <MESSAGE value="without frontend dependency it works" />
+    <option name="LAST_COMMIT_MESSAGE" value="without frontend dependency it works" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

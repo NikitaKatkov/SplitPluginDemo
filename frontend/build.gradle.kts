@@ -11,5 +11,6 @@ dependencies {
             useInstaller = false
         }
         pluginModule(implementation(project(":shared")))
+        bundledModule("intellij.platform.frontend")
     }
 }

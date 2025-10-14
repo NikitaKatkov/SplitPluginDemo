@@ -26,3 +26,9 @@ intellijPlatform {
 kotlin {
     jvmToolchain(SharedCompileDependencies.JAVA_LANGUAGE_VERSION)
 }
+
+tasks {
+    runIde {
+        enabled = false
+    }
+}

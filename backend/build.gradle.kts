@@ -15,6 +15,5 @@ dependencies {
             exclude("org.jetbrains.kotlin", "kotlin-stdlib")
         })
         bundledModule("intellij.platform.rpc.backend")
-        bundledPlugin("com.jetbrains.codeWithMe")
     }
 }
