@@ -8,7 +8,7 @@ import com.intellij.openapi.wm.ToolWindowFactory
 
 private val LOG = logger<FrontendTestToolwindowFactory>()
 
-private class FrontendTestToolwindowFactory : ToolWindowFactory, DumbAware {
+class FrontendTestToolwindowFactory : ToolWindowFactory, DumbAware {
 
     override fun createToolWindowContent(project: Project, toolWindow: ToolWindow) {
         LOG.warn("Creating new FrontendTestToolwindowFactory instance")
