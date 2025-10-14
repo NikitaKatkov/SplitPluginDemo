@@ -10,7 +10,7 @@
     ]]></description>
 
     <content>
-        <module name="shared"/>
+        <module name="shared" loading="required"/>
         <module name="frontend"/>
         <module name="backend"/>
     </content>

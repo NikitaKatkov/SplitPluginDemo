@@ -1,6 +1,5 @@
 plugins {
-    application
-    id("org.jetbrains.intellij.platform")
+    id("org.jetbrains.intellij.platform.module")
     id("org.jetbrains.kotlin.jvm")
     id("org.jetbrains.kotlin.plugin.serialization")
     id("rpc")
@@ -28,7 +27,8 @@ kotlin {
 }
 
 tasks {
-    runIde {
-        enabled = false
+    withType<JavaCompile> {
+        sourceCompatibility = "${SharedCompileDependencies.JAVA_LANGUAGE_VERSION}"
+        targetCompatibility = "${SharedCompileDependencies.JAVA_LANGUAGE_VERSION}"
     }
 }
