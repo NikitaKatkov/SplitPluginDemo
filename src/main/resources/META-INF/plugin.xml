@@ -1,6 +1,6 @@
 <idea-plugin>
-    <id>com.example.SplitPlugin</id>
-    <name>SplitPlugin</name>
+    <id>com.company.SplitPlugin</id>
+    <name>SplitModeShowcase</name>
     <vendor>The developer</vendor>
 
     <description><![CDATA[
