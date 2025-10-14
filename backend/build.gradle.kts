@@ -17,3 +17,9 @@ dependencies {
         bundledModule("intellij.platform.rpc.backend")
     }
 }
+
+tasks {
+    jar {
+        archiveFileName.set("SplitPlugin.backend.jar")
+    }
+}

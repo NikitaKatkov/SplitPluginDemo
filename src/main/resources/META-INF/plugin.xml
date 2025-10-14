@@ -10,8 +10,8 @@
     ]]></description>
 
     <content>
-        <module name="shared" loading="required"/>
-        <module name="frontend"/>
-        <module name="backend"/>
+        <module name="SplitPlugin.shared" loading="required"/>
+        <module name="SplitPlugin.frontend"/>
+        <module name="SplitPlugin.backend"/>
     </content>
 </idea-plugin>

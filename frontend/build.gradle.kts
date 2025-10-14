@@ -14,3 +14,9 @@ dependencies {
         bundledModule("intellij.platform.frontend")
     }
 }
+
+tasks {
+    jar {
+        archiveFileName.set("SplitPlugin.frontend.jar")
+    }
+}

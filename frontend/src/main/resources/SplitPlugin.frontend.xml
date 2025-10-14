@@ -1,7 +1,7 @@
 <idea-plugin>
     <dependencies>
         <module name="intellij.platform.frontend"/>
-        <module name="shared"/>
+        <module name="SplitPlugin.shared"/>
     </dependencies>
 
     <extensions defaultExtensionNs="com.intellij">
