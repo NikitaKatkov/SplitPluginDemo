@@ -1,6 +1,5 @@
 package com.example.splitplugin.shared
 
-import com.intellij.ide.vfs.VirtualFileId
 import com.intellij.platform.rpc.RemoteApiProviderService
 import fleet.rpc.RemoteApi
 import fleet.rpc.Rpc

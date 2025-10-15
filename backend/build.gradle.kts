@@ -11,10 +11,9 @@ dependencies {
         create(IntelliJPlatformType.IntellijIdeaUltimate, libs.versions.ij.platform) {
             useInstaller = false
         }
-        (implementation(project(":shared")) {
-            exclude("org.jetbrains.kotlin", "kotlin-stdlib")
-        })
+        pluginModule(implementation(project(":shared")))
         bundledModule("intellij.platform.rpc.backend")
+        bundledModule("intellij.platform.backend")
     }
 }
 
