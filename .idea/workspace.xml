@@ -4,20 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcab3c8f-f110-4891-9b11-eb906bf5e058" name="Changes" comment="without frontend dependency it works">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="dcab3c8f-f110-4891-9b11-eb906bf5e058" name="Changes" comment="minor adjustments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSources/src/main/kotlin/intellij-platform-remdev.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/buildSources/src/main/kotlin/intellij-platform-remdev.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSources/src/main/kotlin/intellij-platform-main.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/buildSources/src/main/kotlin/intellij-platform-main.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/libs.versions.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build.gradle.kts" afterDir="false" />
     </list>
+    <list id="84c783d8-c8b4-44a6-8b91-95d8e1f2e373" name="trash" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="542" />
+    <option name="cachedIndexableFilesCount" value="520" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="ExternalProjectsData">
@@ -115,6 +117,16 @@
 }</component>
   <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="$USER_HOME$/.gradle/wrapper/dists/gradle-8.13-bin/5xuhj0ry160q40clulazy9h7d/gradle-8.13" javaHome="$USER_HOME$/Library/Java/JavaVirtualMachines/openjdk-23.0.1/Contents/Home" gradleVersion="8.13" />
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/.gradle/caches/8.13/kotlin-dsl/accessors/b57b1c8a672e08555f594230f1cd2a38/sources/org/gradle/kotlin/dsl/Accessors71yjfozemurtyc5m7du5ty1x0.kt" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/8.13/transforms/253679f5ef3fe71d3bc745198015b2e2/transformed/ideaIU-2025.2/lib/modules/intellij.platform.kernel.backend.jar!/intellij.platform.kernel.backend.xml" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2025.2/b045527a21dec6d2c0912edf53afb010e649407b/ideaIU-2025.2-sources.jar!/com/intellij/openapi/wm/ToolWindowEP.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2025.2/b045527a21dec6d2c0912edf53afb010e649407b/ideaIU-2025.2-sources.jar!/com/intellij/openapi/wm/ToolWindowFactory.kt" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2025.2/b045527a21dec6d2c0912edf53afb010e649407b/ideaIU-2025.2-sources.jar!/com/intellij/serviceContainer/ComponentManagerImpl.kt" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.platform/intellij-platform-gradle-plugin/2.9.0/49d51b0bc26e4b2341361a414b034ff4a3e96334/intellij-platform-gradle-plugin-2.9.0-sources.jar!/org/jetbrains/intellij/platform/gradle/extensions/IntelliJPlatformDependenciesExtension.kt" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.platform/intellij-platform-gradle-plugin/2.9.0/49d51b0bc26e4b2341361a414b034ff4a3e96334/intellij-platform-gradle-plugin-2.9.0-sources.jar!/org/jetbrains/intellij/platform/gradle/extensions/IntelliJPlatformExtension.kt" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.platform/intellij-platform-gradle-plugin/2.9.0/49d51b0bc26e4b2341361a414b034ff4a3e96334/intellij-platform-gradle-plugin-2.9.0-sources.jar!/org/jetbrains/intellij/platform/gradle/extensions/IntelliJPlatformTestingExtension.kt" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-8.13-bin/5xuhj0ry160q40clulazy9h7d/gradle-8.13/lib/gradle-kotlin-dsl-8.13.jar!/org/gradle/kotlin/dsl/KotlinBuildScript.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-8.13-bin/5xuhj0ry160q40clulazy9h7d/gradle-8.13/lib/gradle-kotlin-dsl-8.13.jar!/org/gradle/kotlin/dsl/KotlinDependencyExtensionsKt.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-8.13-bin/5xuhj0ry160q40clulazy9h7d/gradle-8.13/lib/gradle-kotlin-dsl-8.13.jar!/org/gradle/kotlin/dsl/PluginDependenciesSpecScope.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-8.13-bin/5xuhj0ry160q40clulazy9h7d/gradle-8.13/lib/gradle-kotlin-dsl-extensions-8.13.jar!/org/gradle/kotlin/dsl/BuiltinPluginIdExtensionsKt.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/jbr-21.0.2/Contents/Home/lib/src.zip!/java.base/java/lang/IllegalStateException.java" root0="SKIP_INSPECTION" />
@@ -166,10 +178,11 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;/Users/Nikita.Katkov/IdeaProjects/IdeaPlugins/SplitPlugin/backend/src/main/kotlin/Main.kt&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.18272425&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.3108856&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.23023023&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -223,7 +236,7 @@
       <recent name="com.example.splitplugin.frontend.jcef" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SplitPlugin [runIdeaInRemoteDevMode]">
+  <component name="RunManager" selected="Gradle.SplitPlugin [runIde]">
     <configuration name="SplitPlugin [buildPlugin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -242,8 +255,11 @@
       </ExternalSystemSettings>
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
       <DebugAllEnabled>false</DebugAllEnabled>
       <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
       <method v="2" />
     </configuration>
     <configuration name="SplitPlugin [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -264,30 +280,11 @@
       </ExternalSystemSettings>
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
       <DebugAllEnabled>false</DebugAllEnabled>
       <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="SplitPlugin [publishPlugin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="publishPlugin" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
       <method v="2" />
     </configuration>
     <configuration name="SplitPlugin [runIde]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -308,53 +305,85 @@
       </ExternalSystemSettings>
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
       <DebugAllEnabled>false</DebugAllEnabled>
       <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
       <method v="2" />
     </configuration>
-    <configuration name="SplitPlugin [runIdeaInRemoteDevMode]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SplitPlugin [verifyPluginStructure]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--info" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="runIdeaInRemoteDevMode" />
+            <option value="verifyPluginStructure" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
       <DebugAllEnabled>false</DebugAllEnabled>
       <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SplitPlugin [verifyPlugin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="verifyPlugin" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SplitPlugin [runIdeaInRemoteDevMode]" />
-        <item itemvalue="Gradle.SplitPlugin [buildPlugin]" />
         <item itemvalue="Gradle.SplitPlugin [runIde]" />
+        <item itemvalue="Gradle.SplitPlugin [buildPlugin]" />
         <item itemvalue="Gradle.SplitPlugin [clean]" />
-        <item itemvalue="Gradle.SplitPlugin [publishPlugin]" />
+        <item itemvalue="Gradle.SplitPlugin [verifyPlugin]" />
+        <item itemvalue="Gradle.SplitPlugin [verifyPluginStructure]" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26199.169" />
-        <option value="bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-IU-252.26199.169" />
+        <option value="bundled-jdk-30f59d01ecdd-cffe25b9f5b3-intellij.indexing.shared.core-IU-253.27604" />
+        <option value="bundled-js-predefined-d6986cc7102b-75c7c973e13d-JavaScript-IU-253.27604" />
       </set>
     </attachedChunks>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="dcab3c8f-f110-4891-9b11-eb906bf5e058" name="Changes" comment="" />
+      <changelist id="84c783d8-c8b4-44a6-8b91-95d8e1f2e373" name="trash" comment="" />
       <created>1748608205480</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -407,55 +436,11 @@
       <workItem from="1760449150767" duration="41000" />
       <workItem from="1760449252851" duration="998000" />
       <workItem from="1760450257618" duration="18000" />
-      <workItem from="1760450409146" duration="2713000" />
-    </task>
-    <task id="LOCAL-00005" summary="add dependency on a shared module">
-      <option name="closed" value="true" />
-      <created>1748614827406</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1748614827406</updated>
-    </task>
-    <task id="LOCAL-00006" summary="add rpc dependency">
-      <option name="closed" value="true" />
-      <created>1748616738121</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1748616738121</updated>
-    </task>
-    <task id="LOCAL-00007" summary="add task to run ide with plugin installed into both backend and frontend">
-      <option name="closed" value="true" />
-      <created>1748620000107</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1748620000107</updated>
-    </task>
-    <task id="LOCAL-00008" summary="add task to run ide with plugin installed into both backend and frontend">
-      <option name="closed" value="true" />
-      <created>1748621680283</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1748621680283</updated>
-    </task>
-    <task id="LOCAL-00009" summary="disable searchable options task">
-      <option name="closed" value="true" />
-      <created>1748622103574</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1748622103574</updated>
-    </task>
-    <task id="LOCAL-00010" summary="specify package attributes in content modules to make a single plugin classloader understand how to distinguish the corresponding classes">
-      <option name="closed" value="true" />
-      <created>1748622277136</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1748622277136</updated>
+      <workItem from="1760450409146" duration="11504000" />
+      <workItem from="1760483935587" duration="86000" />
+      <workItem from="1760484096251" duration="339000" />
+      <workItem from="1760484942754" duration="2656000" />
+      <workItem from="1760561089482" duration="337000" />
     </task>
     <task id="LOCAL-00011" summary="add logs">
       <option name="closed" value="true" />
@@ -801,7 +786,55 @@
       <option name="project" value="LOCAL" />
       <updated>1760181016962</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="specify platform.frontend dependency in build script (does not work anyways though)">
+      <option name="closed" value="true" />
+      <created>1760453636287</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1760453636287</updated>
+    </task>
+    <task id="LOCAL-00055" summary="enable platform.frontend runtime dependency - this commit prevents the plugin from working normally, frontend module does not get looaded with it">
+      <option name="closed" value="true" />
+      <created>1760453691765</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1760453691765</updated>
+    </task>
+    <task id="LOCAL-00056" summary="use platform and platform.module dependencies">
+      <option name="closed" value="true" />
+      <created>1760478367008</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1760478367008</updated>
+    </task>
+    <task id="LOCAL-00057" summary="seems like correct gradle modules naming VS ij modules naming">
+      <option name="closed" value="true" />
+      <created>1760480692239</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1760480692239</updated>
+    </task>
+    <task id="LOCAL-00058" summary="fix plugin verification">
+      <option name="closed" value="true" />
+      <created>1760481564428</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1760481564428</updated>
+    </task>
+    <task id="LOCAL-00059" summary="minor adjustments">
+      <option name="closed" value="true" />
+      <created>1760482420512</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1760482420512</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -857,12 +890,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="drop unused code in build scripts" />
-    <MESSAGE value="programmatically forward ports using utils from CodeWithMe plugin" />
-    <MESSAGE value="extract common logic to buildSrc" />
-    <MESSAGE value="rename" />
-    <MESSAGE value="xmx and remove duplicates" />
-    <MESSAGE value="further refactoring to reuse common logic" />
     <MESSAGE value="gitignore" />
     <MESSAGE value="add more yet unused versions" />
     <MESSAGE value="avoid using buildSrc, use shared build module instead to be able to acccess lib versions" />
@@ -882,7 +909,13 @@
     <MESSAGE value="explicit backend dependency" />
     <MESSAGE value="rename xmls according to their primary module names to make runtime resolve work" />
     <MESSAGE value="without frontend dependency it works" />
-    <option name="LAST_COMMIT_MESSAGE" value="without frontend dependency it works" />
+    <MESSAGE value="specify platform.frontend dependency in build script (does not work anyways though)" />
+    <MESSAGE value="enable platform.frontend runtime dependency - this commit prevents the plugin from working normally, frontend module does not get looaded with it" />
+    <MESSAGE value="use platform and platform.module dependencies" />
+    <MESSAGE value="seems like correct gradle modules naming VS ij modules naming" />
+    <MESSAGE value="fix plugin verification" />
+    <MESSAGE value="minor adjustments" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor adjustments" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

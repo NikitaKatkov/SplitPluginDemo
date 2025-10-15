@@ -1,6 +1,6 @@
 import org.jetbrains.intellij.platform.gradle.IntelliJPlatformType
 
-version = ""
+version = "1.0-SNAPSHOT"
 plugins {
     id("intellij-platform-remdev")
 }
