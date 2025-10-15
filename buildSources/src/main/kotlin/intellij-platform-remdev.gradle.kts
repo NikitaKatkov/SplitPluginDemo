@@ -13,7 +13,6 @@ repositories {
 }
 
 dependencies {
-    compileOnly(kotlin("stdlib-jdk8"))
     compileOnly("org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:${SharedCompileDependencies.KOTLIN_SERIALIZATION_LIBRARY}")
     compileOnly("org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:${SharedCompileDependencies.KOTLIN_SERIALIZATION_LIBRARY}")
 }
