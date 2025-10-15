@@ -33,10 +33,3 @@ intellijPlatform {
         }
     }
 }
-
-tasks {
-    @Suppress("unused")
-    val runIdeaInRemoteDevMode by intellijPlatformTesting.runIde.registering {
-        type = IntelliJPlatformType.IntellijIdeaUltimate
-    }
-}
