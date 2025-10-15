@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcab3c8f-f110-4891-9b11-eb906bf5e058" name="Changes" comment="drop dedicated task, use runIde">
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+    <list default="true" id="dcab3c8f-f110-4891-9b11-eb906bf5e058" name="Changes" comment="kotlinc.xml: default dependency + bumped versions of plugins">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSources/src/main/kotlin/intellij-platform-remdev.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/buildSources/src/main/kotlin/intellij-platform-remdev.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/libs.versions.toml" afterDir="false" />
     </list>
     <list id="84c783d8-c8b4-44a6-8b91-95d8e1f2e373" name="trash" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -235,7 +231,7 @@
       <recent name="com.example.splitplugin.frontend.jcef" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SplitPlugin [runIde]">
+  <component name="RunManager" selected="Gradle.SplitPlugin [buildPlugin]">
     <configuration name="SplitPlugin [buildPlugin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -363,9 +359,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SplitPlugin [runIde]" />
         <item itemvalue="Gradle.SplitPlugin [buildPlugin]" />
         <item itemvalue="Gradle.SplitPlugin [clean]" />
+        <item itemvalue="Gradle.SplitPlugin [runIde]" />
         <item itemvalue="Gradle.SplitPlugin [runIdeaInRemoteDevMode]" />
         <item itemvalue="Gradle.SplitPlugin [verifyPlugin]" />
       </list>
@@ -440,14 +436,6 @@
       <workItem from="1760484096251" duration="339000" />
       <workItem from="1760484942754" duration="2656000" />
       <workItem from="1760561089482" duration="337000" />
-    </task>
-    <task id="LOCAL-00014" summary="use correct dependencies for 251 platform version">
-      <option name="closed" value="true" />
-      <created>1748628372367</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1748628372367</updated>
     </task>
     <task id="LOCAL-00015" summary="add more logs">
       <option name="closed" value="true" />
@@ -833,7 +821,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760564581742</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="kotlinc.xml: default dependency + bumped versions of plugins">
+      <option name="closed" value="true" />
+      <created>1760566223053</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1760566223053</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -889,7 +885,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="avoid using buildSrc, use shared build module instead to be able to acccess lib versions" />
     <MESSAGE value="use extracted libs" />
     <MESSAGE value="more versions" />
     <MESSAGE value="extract compile deps versions into kotlin class, becaudse tjere is no way to store them inside libs.toml" />
@@ -914,7 +909,8 @@
     <MESSAGE value="drop strange looking dependencies" />
     <MESSAGE value="trash" />
     <MESSAGE value="drop dedicated task, use runIde" />
-    <option name="LAST_COMMIT_MESSAGE" value="drop dedicated task, use runIde" />
+    <MESSAGE value="kotlinc.xml: default dependency + bumped versions of plugins" />
+    <option name="LAST_COMMIT_MESSAGE" value="kotlinc.xml: default dependency + bumped versions of plugins" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
