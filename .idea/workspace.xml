@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcab3c8f-f110-4891-9b11-eb906bf5e058" name="Changes" comment="minor adjustments">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSources/src/main/kotlin/intellij-platform-main.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/buildSources/src/main/kotlin/intellij-platform-main.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/libs.versions.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build.gradle.kts" afterDir="false" />
-    </list>
+    <list default="true" id="dcab3c8f-f110-4891-9b11-eb906bf5e058" name="Changes" comment="drop strange looking dependencies" />
     <list id="84c783d8-c8b4-44a6-8b91-95d8e1f2e373" name="trash" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -312,7 +305,7 @@
       <GradleCoverageDisabled>false</GradleCoverageDisabled>
       <method v="2" />
     </configuration>
-    <configuration name="SplitPlugin [verifyPluginStructure]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SplitPlugin [runIdeaInRemoteDevMode]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -323,7 +316,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="verifyPluginStructure" />
+            <option value="runIdeaInRemoteDevMode" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -365,10 +358,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.SplitPlugin [runIde]" />
+        <item itemvalue="Gradle.SplitPlugin [runIdeaInRemoteDevMode]" />
         <item itemvalue="Gradle.SplitPlugin [buildPlugin]" />
         <item itemvalue="Gradle.SplitPlugin [clean]" />
         <item itemvalue="Gradle.SplitPlugin [verifyPlugin]" />
-        <item itemvalue="Gradle.SplitPlugin [verifyPluginStructure]" />
       </list>
     </recent_temporary>
   </component>
@@ -441,14 +434,6 @@
       <workItem from="1760484096251" duration="339000" />
       <workItem from="1760484942754" duration="2656000" />
       <workItem from="1760561089482" duration="337000" />
-    </task>
-    <task id="LOCAL-00011" summary="add logs">
-      <option name="closed" value="true" />
-      <created>1748622634540</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1748622634540</updated>
     </task>
     <task id="LOCAL-00012" summary="add logs">
       <option name="closed" value="true" />
@@ -834,7 +819,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760482420512</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="drop strange looking dependencies">
+      <option name="closed" value="true" />
+      <created>1760564266552</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1760564266552</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -890,7 +883,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="gitignore" />
     <MESSAGE value="add more yet unused versions" />
     <MESSAGE value="avoid using buildSrc, use shared build module instead to be able to acccess lib versions" />
     <MESSAGE value="use extracted libs" />
@@ -915,7 +907,8 @@
     <MESSAGE value="seems like correct gradle modules naming VS ij modules naming" />
     <MESSAGE value="fix plugin verification" />
     <MESSAGE value="minor adjustments" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor adjustments" />
+    <MESSAGE value="drop strange looking dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="drop strange looking dependencies" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
