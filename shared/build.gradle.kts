@@ -11,9 +11,3 @@ dependencies {
         }
     }
 }
-
-tasks {
-    jar {
-        archiveFileName.set("SplitPlugin.shared.jar")
-    }
-}

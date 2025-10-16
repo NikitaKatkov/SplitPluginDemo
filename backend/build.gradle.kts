@@ -16,9 +16,3 @@ dependencies {
         bundledModule("intellij.platform.backend")
     }
 }
-
-tasks {
-    jar {
-        archiveFileName.set("SplitPlugin.backend.jar")
-    }
-}
