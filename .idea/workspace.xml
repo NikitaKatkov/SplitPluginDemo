@@ -7,13 +7,6 @@
     <list default="true" id="dcab3c8f-f110-4891-9b11-eb906bf5e058" name="Changes" comment="trash">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/SplitPlugin.backend.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/SplitPlugin.backend.main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/SplitPlugin.frontend.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/SplitPlugin.frontend.main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/src/main/resources/SplitPlugin.shared.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/main/resources/SplitPlugin.shared.main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
     </list>
     <list id="84c783d8-c8b4-44a6-8b91-95d8e1f2e373" name="trash" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,6 +70,27 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="intellij platform" type="c8890929:TasksNode$1" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SplitPlugin" type="f1a62948:ProjectNode" />
+                <item name="SplitPlugin" type="2d1252cf:ModuleNode" />
+                <item name="backend" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SplitPlugin" type="f1a62948:ProjectNode" />
+                <item name="SplitPlugin" type="2d1252cf:ModuleNode" />
+                <item name="backend" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SplitPlugin" type="f1a62948:ProjectNode" />
+                <item name="SplitPlugin" type="2d1252cf:ModuleNode" />
+                <item name="backend" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="intellij platform" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -120,6 +134,9 @@
     <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2025.2/b045527a21dec6d2c0912edf53afb010e649407b/ideaIU-2025.2-sources.jar!/com/intellij/openapi/wm/ToolWindowEP.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2025.2/b045527a21dec6d2c0912edf53afb010e649407b/ideaIU-2025.2-sources.jar!/com/intellij/openapi/wm/ToolWindowFactory.kt" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2025.2/b045527a21dec6d2c0912edf53afb010e649407b/ideaIU-2025.2-sources.jar!/com/intellij/serviceContainer/ComponentManagerImpl.kt" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/253-EAP-SNAPSHOT/6f699b3b0602621b718482309ff3437a99ac91fc/ideaIU-253-EAP-SNAPSHOT-sources.jar!/com/intellij/ide/plugins/PluginManager.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/253-EAP-SNAPSHOT/6f699b3b0602621b718482309ff3437a99ac91fc/ideaIU-253-EAP-SNAPSHOT-sources.jar!/com/intellij/platform/rpc/RemoteApiProviderService.kt" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/253-EAP-SNAPSHOT/6f699b3b0602621b718482309ff3437a99ac91fc/ideaIU-253-EAP-SNAPSHOT-sources.jar!/fleet/rpc/FleetApi.kt" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.platform/intellij-platform-gradle-plugin/2.9.0/49d51b0bc26e4b2341361a414b034ff4a3e96334/intellij-platform-gradle-plugin-2.9.0-sources.jar!/org/jetbrains/intellij/platform/gradle/extensions/IntelliJPlatformDependenciesExtension.kt" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.platform/intellij-platform-gradle-plugin/2.9.0/49d51b0bc26e4b2341361a414b034ff4a3e96334/intellij-platform-gradle-plugin-2.9.0-sources.jar!/org/jetbrains/intellij/platform/gradle/extensions/IntelliJPlatformExtension.kt" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.platform/intellij-platform-gradle-plugin/2.9.0/49d51b0bc26e4b2341361a414b034ff4a3e96334/intellij-platform-gradle-plugin-2.9.0-sources.jar!/org/jetbrains/intellij/platform/gradle/extensions/IntelliJPlatformTestingExtension.kt" root0="SKIP_INSPECTION" />
@@ -128,6 +145,9 @@
     <setting file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-8.13-bin/5xuhj0ry160q40clulazy9h7d/gradle-8.13/lib/gradle-kotlin-dsl-8.13.jar!/org/gradle/kotlin/dsl/PluginDependenciesSpecScope.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-8.13-bin/5xuhj0ry160q40clulazy9h7d/gradle-8.13/lib/gradle-kotlin-dsl-extensions-8.13.jar!/org/gradle/kotlin/dsl/BuiltinPluginIdExtensionsKt.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/jbr-21.0.2/Contents/Home/lib/src.zip!/java.base/java/lang/IllegalStateException.java" root0="SKIP_INSPECTION" />
+    <setting file="zip:///var/folders/81/c0f49hq14gbb6gmzggpjqsn80000gp/T/fileExpanderFiles/SplitPlugin.backend.jar--1957488110/SplitPlugin.backend.jar!/SplitPlugin.backend.xml" root0="SKIP_INSPECTION" />
+    <setting file="zip:///var/folders/81/c0f49hq14gbb6gmzggpjqsn80000gp/T/fileExpanderFiles/SplitPlugin.backend.jar--1957562279/SplitPlugin.backend.jar!/com/example/splitplugin/backend/BackendToolwindowFctry.class" root0="SKIP_INSPECTION" />
+    <setting file="zip:///var/folders/81/c0f49hq14gbb6gmzggpjqsn80000gp/T/fileExpanderFiles/SplitPlugin.shared.jar--1483041718/SplitPlugin.shared.jar!/SplitPlugin.shared.main.xml" root0="SKIP_INSPECTION" />
   </component>
   <component name="McpServerSettings">
     <option name="processedClients">
@@ -890,7 +910,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use extracted libs" />
     <MESSAGE value="more versions" />
     <MESSAGE value="extract compile deps versions into kotlin class, becaudse tjere is no way to store them inside libs.toml" />
     <MESSAGE value="bumped versions, plugin does not work anymore thanks to ij gradle update" />
@@ -915,7 +934,8 @@
     <MESSAGE value="drop dedicated task, use runIde" />
     <MESSAGE value="kotlinc.xml: default dependency + bumped versions of plugins" />
     <MESSAGE value="trash" />
-    <option name="LAST_COMMIT_MESSAGE" value="trash" />
+    <MESSAGE value="rename to XXX.main , did not help though" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename to XXX.main , did not help though" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
