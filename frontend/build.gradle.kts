@@ -3,6 +3,7 @@ import org.jetbrains.intellij.platform.gradle.IntelliJPlatformType
 version = "1.0-SNAPSHOT"
 plugins {
     id("intellij-platform-remdev")
+    alias(libs.plugins.compose.compiler)
 }
 
 dependencies {
@@ -11,6 +12,14 @@ dependencies {
             useInstaller = false
         }
         pluginModule(implementation(project(":shared")))
-        bundledModule("intellij.platform.frontend")
+        bundledModules(
+            "intellij.platform.frontend",
+            "intellij.libraries.skiko",
+            "intellij.libraries.compose.foundation.desktop",
+            "intellij.libraries.compose.runtime.desktop",
+            "intellij.platform.jewel.foundation",
+            "intellij.platform.jewel.ui",
+            "intellij.platform.jewel.ideLafBridge",
+        )
     }
 }
