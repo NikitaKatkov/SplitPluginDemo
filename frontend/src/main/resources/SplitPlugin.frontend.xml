@@ -11,7 +11,7 @@
     </dependencies>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="org.jetbrains.plugins.template.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <toolWindow factoryClass="com.example.splitplugin.frontend.compose.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
 
         <toolWindow id="TestToolWindow"
                     icon="AllIcons.Actions.AddToDictionary"
