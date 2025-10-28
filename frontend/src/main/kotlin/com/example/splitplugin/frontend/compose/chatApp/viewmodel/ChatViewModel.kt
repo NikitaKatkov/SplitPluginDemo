@@ -1,11 +1,10 @@
 package com.example.splitplugin.frontend.compose.chatApp.viewmodel
 
+import com.example.splitplugin.shared.ChatMessage
+import com.example.splitplugin.shared.ChatRepositoryApi
 import com.intellij.openapi.Disposable
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
-import com.example.splitplugin.shared.ChatMessage
-
-import com.example.splitplugin.frontend.compose.chatApp.repository.ChatRepositoryApi
 
 interface ChatViewModelApi : Disposable {
     val chatMessagesFlow: StateFlow<List<ChatMessage>>

@@ -14,6 +14,11 @@ import kotlinx.coroutines.CoroutineScope
  */
 @Service(Level.PROJECT)
 class CoroutineScopeHolder(private val projectWideCoroutineScope: CoroutineScope) {
+    companion object {
+        fun getInstance(project: com.intellij.openapi.project.Project): CoroutineScopeHolder {
+            return project.getService(CoroutineScopeHolder::class.java)
+        }
+    }
     /**
      * Creates a new coroutine scope as a child of the project-wide coroutine scope with the specified name.
      *
@@ -28,4 +33,6 @@ class CoroutineScopeHolder(private val projectWideCoroutineScope: CoroutineScope
      */
     @Suppress("UnstableApiUsage")
     fun createScope(name: String): CoroutineScope = projectWideCoroutineScope.childScope(name)
+
+    fun getPluginScope(): CoroutineScope = projectWideCoroutineScope
 }

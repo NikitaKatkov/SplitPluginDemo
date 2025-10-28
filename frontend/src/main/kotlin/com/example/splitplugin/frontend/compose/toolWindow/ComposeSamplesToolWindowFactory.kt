@@ -1,13 +1,6 @@
 package com.example.splitplugin.frontend.compose.toolWindow
 
 import androidx.compose.runtime.LaunchedEffect
-import com.intellij.openapi.components.service
-import com.intellij.openapi.project.DumbAware
-import com.intellij.openapi.project.Project
-import com.intellij.openapi.util.Disposer
-import com.intellij.openapi.wm.ToolWindow
-import com.intellij.openapi.wm.ToolWindowFactory
-import org.jetbrains.jewel.bridge.addComposeTab
 import com.example.splitplugin.frontend.compose.CoroutineScopeHolder
 import com.example.splitplugin.frontend.compose.chatApp.ChatAppSample
 import com.example.splitplugin.frontend.compose.chatApp.viewmodel.ChatViewModel
@@ -16,13 +9,24 @@ import com.example.splitplugin.frontend.compose.weatherApp.services.LocationsPro
 import com.example.splitplugin.frontend.compose.weatherApp.services.WeatherForecastService
 import com.example.splitplugin.frontend.compose.weatherApp.ui.WeatherAppSample
 import com.example.splitplugin.frontend.compose.weatherApp.ui.WeatherAppViewModel
+import com.example.splitplugin.shared.ChatRepositoryApi
+import com.intellij.openapi.components.service
+import com.intellij.openapi.project.DumbAware
+import com.intellij.openapi.project.Project
+import com.intellij.openapi.util.Disposer
+import com.intellij.openapi.wm.ToolWindow
+import com.intellij.openapi.wm.ToolWindowFactory
+import kotlinx.coroutines.launch
+import org.jetbrains.jewel.bridge.addComposeTab
 
 class ComposeSamplesToolWindowFactory : ToolWindowFactory, DumbAware {
     override fun shouldBeAvailable(project: Project) = true
 
     override fun createToolWindowContent(project: Project, toolWindow: ToolWindow) {
-        weatherApp(project, toolWindow)
-        chatApp(project, toolWindow)
+        CoroutineScopeHolder.getInstance(project).getPluginScope().launch {
+            weatherApp(project, toolWindow)
+            chatApp(project, toolWindow)
+        }
     }
 
     private fun weatherApp(project: Project, toolWindow: ToolWindow) {
@@ -48,11 +52,11 @@ class ComposeSamplesToolWindowFactory : ToolWindowFactory, DumbAware {
         }
     }
 
-    private fun chatApp(project: Project, toolWindow: ToolWindow) {
+    private suspend fun chatApp(project: Project, toolWindow: ToolWindow) {
         val viewModel = ChatViewModel(
             project.service<CoroutineScopeHolder>()
                 .createScope(ChatViewModel::class.java.simpleName),
-            service<ChatRepository>() // todo remote api now
+            ChatRepositoryApi.getInstanceAsync() // todo remote api now
         )
         Disposer.register(toolWindow.disposable, viewModel)
 
