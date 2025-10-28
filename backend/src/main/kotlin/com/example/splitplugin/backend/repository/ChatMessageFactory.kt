@@ -1,6 +1,7 @@
-package com.example.splitplugin.frontend.compose.chatApp.repository
+package com.example.splitplugin.backend.repository
 
-import com.example.splitplugin.frontend.compose.chatApp.model.ChatMessage
+import com.example.splitplugin.shared.ChatMessage
+
 import java.time.LocalDateTime
 
 

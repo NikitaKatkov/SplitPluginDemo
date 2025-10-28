@@ -1,4 +1,4 @@
-package com.example.splitplugin.frontend.compose.chatApp.repository
+package com.example.splitplugin.backend.repository
 
 class AIResponseGenerator {
 

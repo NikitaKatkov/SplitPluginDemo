@@ -1,6 +1,6 @@
 package com.example.splitplugin.frontend.compose.weatherApp.services
 
-import com.example.splitplugin.frontend.compose.weatherApp.model.Searchable
+import com.example.splitplugin.shared.Searchable
 
 /**
  * Defines a provider interface for auto-completion items based on a search query.

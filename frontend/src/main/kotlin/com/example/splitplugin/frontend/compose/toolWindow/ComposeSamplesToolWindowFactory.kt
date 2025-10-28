@@ -10,7 +10,6 @@ import com.intellij.openapi.wm.ToolWindowFactory
 import org.jetbrains.jewel.bridge.addComposeTab
 import com.example.splitplugin.frontend.compose.CoroutineScopeHolder
 import com.example.splitplugin.frontend.compose.chatApp.ChatAppSample
-import com.example.splitplugin.frontend.compose.chatApp.repository.ChatRepository
 import com.example.splitplugin.frontend.compose.chatApp.viewmodel.ChatViewModel
 import com.example.splitplugin.frontend.compose.weatherApp.model.Location
 import com.example.splitplugin.frontend.compose.weatherApp.services.LocationsProvider
@@ -53,7 +52,7 @@ class ComposeSamplesToolWindowFactory : ToolWindowFactory, DumbAware {
         val viewModel = ChatViewModel(
             project.service<CoroutineScopeHolder>()
                 .createScope(ChatViewModel::class.java.simpleName),
-            service<ChatRepository>()
+            service<ChatRepository>() // todo remote api now
         )
         Disposer.register(toolWindow.disposable, viewModel)
 

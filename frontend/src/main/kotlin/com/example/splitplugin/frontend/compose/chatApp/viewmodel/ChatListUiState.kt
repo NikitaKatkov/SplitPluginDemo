@@ -1,6 +1,7 @@
 package com.example.splitplugin.frontend.compose.chatApp.viewmodel
 
-import com.example.splitplugin.frontend.compose.chatApp.model.ChatMessage
+import com.example.splitplugin.shared.ChatMessage
+
 
 data class ChatListUiState(
     val messages: List<ChatMessage> = emptyList(),

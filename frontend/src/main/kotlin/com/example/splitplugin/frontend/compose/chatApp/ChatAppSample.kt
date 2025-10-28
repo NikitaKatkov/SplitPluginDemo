@@ -20,11 +20,11 @@ import kotlinx.coroutines.flow.distinctUntilChanged
 import org.jetbrains.jewel.foundation.theme.JewelTheme
 import org.jetbrains.jewel.ui.Orientation
 import org.jetbrains.jewel.ui.component.*
-import com.example.splitplugin.frontend.compose.chatApp.model.ChatMessage
 import com.example.splitplugin.frontend.compose.chatApp.ui.SearchState
 import com.example.splitplugin.frontend.compose.chatApp.ui.*
 import com.example.splitplugin.frontend.compose.chatApp.viewmodel.ChatViewModel
 import com.example.splitplugin.frontend.compose.chatApp.viewmodel.MessageInputState
+import com.example.splitplugin.shared.ChatMessage
 
 @Composable
 fun ChatAppSample(viewModel: ChatViewModel) {

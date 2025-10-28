@@ -1,4 +1,4 @@
-package com.example.splitplugin.frontend.compose.weatherApp.model
+package com.example.splitplugin.shared
 
 /**
  * Represents an entity that can be filtered by a search query.

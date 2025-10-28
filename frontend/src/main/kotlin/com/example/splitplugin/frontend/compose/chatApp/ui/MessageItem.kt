@@ -14,7 +14,8 @@ import androidx.compose.ui.unit.sp
 import org.jetbrains.jewel.foundation.theme.JewelTheme
 import org.jetbrains.jewel.ui.component.Text
 import com.example.splitplugin.frontend.compose.chatApp.ChatAppColors
-import com.example.splitplugin.frontend.compose.chatApp.model.ChatMessage
+import com.example.splitplugin.shared.ChatMessage
+
 import com.example.splitplugin.frontend.compose.components.PulsingText
 
 @Composable

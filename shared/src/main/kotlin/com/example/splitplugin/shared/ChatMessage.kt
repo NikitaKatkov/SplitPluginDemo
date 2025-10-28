@@ -1,8 +1,7 @@
-package com.example.splitplugin.frontend.compose.chatApp.model
+package com.example.splitplugin.shared
 
-import com.example.splitplugin.frontend.compose.chatApp.model.ChatMessage.ChatMessageType.AI_THINKING
-import com.example.splitplugin.frontend.compose.chatApp.model.ChatMessage.ChatMessageType.TEXT
-import com.example.splitplugin.frontend.compose.weatherApp.model.Searchable
+import com.example.splitplugin.shared.ChatMessage.ChatMessageType.AI_THINKING
+import com.example.splitplugin.shared.ChatMessage.ChatMessageType.TEXT
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import java.util.*

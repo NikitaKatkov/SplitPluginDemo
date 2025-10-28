@@ -2,7 +2,8 @@ package com.example.splitplugin.frontend.compose.chatApp.viewmodel
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.*
-import com.example.splitplugin.frontend.compose.chatApp.model.ChatMessage
+import com.example.splitplugin.shared.ChatMessage
+
 import com.example.splitplugin.frontend.compose.chatApp.ui.SearchState
 import com.example.splitplugin.frontend.compose.chatApp.ui.hasResults
 import com.example.splitplugin.frontend.compose.chatApp.ui.isSearching

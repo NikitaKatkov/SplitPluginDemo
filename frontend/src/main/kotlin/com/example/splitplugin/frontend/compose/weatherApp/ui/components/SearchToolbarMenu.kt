@@ -16,7 +16,7 @@ import org.jetbrains.jewel.ui.icons.AllIconsKeys
 import com.example.splitplugin.frontend.compose.ComposeTemplateBundle
 import com.example.splitplugin.frontend.compose.components.SearchBarWithAutoCompletion
 import com.example.splitplugin.frontend.compose.weatherApp.model.PreviewableItem
-import com.example.splitplugin.frontend.compose.weatherApp.model.Searchable
+import com.example.splitplugin.shared.Searchable
 import com.example.splitplugin.frontend.compose.weatherApp.services.SearchAutoCompletionItemProvider
 
 @Composable
