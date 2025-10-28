@@ -11,12 +11,6 @@
     </dependencies>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.example.splitplugin.frontend.compose.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-
-        <toolWindow id="TestToolWindow"
-                    icon="AllIcons.Actions.AddToDictionary"
-                    factoryClass="com.example.splitplugin.frontend.FrontendTestToolwindowFactory"
-                    secondary="false"
-                    anchor="left"/>
+        <toolWindow factoryClass="com.example.splitplugin.frontend.compose.toolWindow.ComposeSamplesToolWindowFactory" id="ComposeSamplesToolWindowFactory"/>
     </extensions>
 </idea-plugin>

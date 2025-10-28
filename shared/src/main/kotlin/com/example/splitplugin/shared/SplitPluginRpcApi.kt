@@ -4,7 +4,6 @@ import com.intellij.platform.rpc.RemoteApiProviderService
 import fleet.rpc.RemoteApi
 import fleet.rpc.Rpc
 import fleet.rpc.remoteApiDescriptor
-import kotlinx.coroutines.flow.Flow
 import kotlinx.serialization.Serializable
 
 @Rpc
@@ -14,9 +13,6 @@ interface SplitPluginRpcApi : RemoteApi<Unit> {
             return RemoteApiProviderService.resolve(remoteApiDescriptor<SplitPluginRpcApi>())
         }
     }
-
-    suspend fun getSomeHeavyComputationResultsFlow(): Flow<ComputationResult>
-    suspend fun updateBackendState(request: UpdateBackendStateRequest)
 }
 
 @Serializable

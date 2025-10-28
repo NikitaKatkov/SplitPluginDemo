@@ -1,3 +1,5 @@
+@file:Suppress("UnstableApiUsage")
+
 package com.example.splitplugin.backend
 
 import com.example.splitplugin.shared.SplitPluginRpcApi
