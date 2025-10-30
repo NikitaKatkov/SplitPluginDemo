@@ -1,6 +1,7 @@
 package com.example.splitplugin.frontend.compose.weatherApp.model
 
 import androidx.compose.runtime.Immutable
+import com.example.splitplugin.shared.Searchable
 
 /**
  * Represents a location with a name and associated country.

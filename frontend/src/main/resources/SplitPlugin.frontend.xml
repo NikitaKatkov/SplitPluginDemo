@@ -11,6 +11,6 @@
     </dependencies>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.example.splitplugin.frontend.compose.toolWindow.ComposeSamplesToolWindowFactory" id="ComposeSamplesToolWindowFactory"/>
+        <toolWindow factoryClass="com.example.splitplugin.frontend.compose.toolWindow.FrontendComposeSamplesToolWindowFactory" id="ComposeSamplesToolWindowFactory"/>
     </extensions>
 </idea-plugin>

@@ -19,7 +19,7 @@ import com.intellij.openapi.wm.ToolWindowFactory
 import kotlinx.coroutines.launch
 import org.jetbrains.jewel.bridge.addComposeTab
 
-class ComposeSamplesToolWindowFactory : ToolWindowFactory, DumbAware {
+class FrontendComposeSamplesToolWindowFactory : ToolWindowFactory, DumbAware {
     override fun shouldBeAvailable(project: Project) = true
 
     override fun createToolWindowContent(project: Project, toolWindow: ToolWindow) {
