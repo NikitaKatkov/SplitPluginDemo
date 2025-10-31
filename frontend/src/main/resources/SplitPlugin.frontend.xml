@@ -11,6 +11,6 @@
     </dependencies>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.example.splitplugin.frontend.compose.toolWindow.FrontendComposeSamplesToolWindowFactory" id="ComposeSamplesToolWindowFactory"/>
+        <toolWindow factoryClass="com.example.splitplugin.frontend.compose.toolWindow.FrontendComposeSamplesToolWindowFactory" id="ComposeSamplesToolWindowFactory" icon="AllIcons.CodeWithMe.CwmLogoToolbar"/>
     </extensions>
 </idea-plugin>
