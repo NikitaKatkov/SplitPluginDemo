@@ -9,6 +9,7 @@ import com.intellij.openapi.components.Service
 import com.intellij.openapi.components.Service.Level
 import com.intellij.openapi.project.Project
 import com.intellij.platform.project.projectId
+import fleet.rpc.client.durable
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
@@ -27,9 +28,11 @@ class FrontendChatRepositoryModel(
     }
 
     override val messagesFlow: StateFlow<List<ChatMessage>> = flow {
-        ChatRepositoryRpcApi.getInstanceAsync().getMessagesFlow(project.projectId()).collect { valueFromBackend ->
-            val mappedValue = valueFromBackend.map { messageDto -> messageDto.toChatMessage() }
-            emit(mappedValue)
+        durable {
+            ChatRepositoryRpcApi.getInstanceAsync().getMessagesFlow(project.projectId()).collect { valueFromBackend ->
+                val mappedValue = valueFromBackend.map { messageDto -> messageDto.toChatMessage() }
+                emit(mappedValue)
+            }
         }
     }.stateIn(coroutineScope, initialValue = emptyList(), started = SharingStarted.Lazily)
 
