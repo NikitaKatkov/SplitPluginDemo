@@ -1,22 +1,32 @@
+@file:Suppress("UnstableApiUsage")
 package com.example.splitplugin.backend
 
 import com.example.splitplugin.backend.repository.AIResponseGenerator
 import com.example.splitplugin.backend.repository.ChatMessageFactory
 import com.example.splitplugin.shared.ChatMessage
-import com.example.splitplugin.shared.ChatRepositoryApi
+import com.example.splitplugin.shared.ChatMessageDto
+import com.example.splitplugin.shared.toChatMessageDto
+import com.intellij.openapi.components.Service
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.withContext
 import java.time.LocalDateTime
 
-class BackendChatRepositoryApi : ChatRepositoryApi {
+@Service(Service.Level.PROJECT)
+class BackendChatRepositoryModel {
+    companion object {
+        fun getInstance(project: com.intellij.openapi.project.Project): BackendChatRepositoryModel {
+            return project.getService(BackendChatRepositoryModel::class.java)
+        }
+    }
+
     private val chatMessageFactory = ChatMessageFactory("AI Buddy", "Super Engineer")
     private val aiResponseGenerator = AIResponseGenerator()
-    private val _messages = MutableStateFlow<List<ChatMessage>>(
+    private val _messages = MutableStateFlow(
         listOf(
             chatMessageFactory.createAIMessage(
                 content = "Hello! I'm your AI Buddy. I'm here to help and chat with you about anything you'd like to discuss. How are you doing today?",
@@ -33,9 +43,11 @@ class BackendChatRepositoryApi : ChatRepositoryApi {
         )
     )
 
-    override val messagesFlow: StateFlow<List<ChatMessage>> = _messages.asStateFlow()
+    suspend fun getMessagesFlow(): Flow<List<ChatMessageDto>> {
+        return _messages.map { messagesList -> messagesList.map(ChatMessage::toChatMessageDto) }
+    }
 
-    override suspend fun sendMessage(messageContent: String) {
+    suspend fun sendMessage(messageContent: String) {
         withContext(Dispatchers.IO) {
             try {
                 // Emits the user message to a chat list

@@ -1,15 +1,9 @@
 package com.example.splitplugin.frontend.compose.toolWindow
 
-import androidx.compose.runtime.LaunchedEffect
 import com.example.splitplugin.frontend.compose.CoroutineScopeHolder
 import com.example.splitplugin.frontend.compose.chatApp.ChatAppSample
 import com.example.splitplugin.frontend.compose.chatApp.viewmodel.ChatViewModel
-import com.example.splitplugin.frontend.compose.weatherApp.model.Location
-import com.example.splitplugin.frontend.compose.weatherApp.services.LocationsProvider
-import com.example.splitplugin.frontend.compose.weatherApp.services.WeatherForecastService
-import com.example.splitplugin.frontend.compose.weatherApp.ui.WeatherAppSample
-import com.example.splitplugin.frontend.compose.weatherApp.ui.WeatherAppViewModel
-import com.example.splitplugin.shared.ChatRepositoryApi
+import com.example.splitplugin.frontend.compose.chatApp.viewmodel.FrontendChatRepositoryModel
 import com.intellij.openapi.components.service
 import com.intellij.openapi.project.DumbAware
 import com.intellij.openapi.project.Project
@@ -24,31 +18,7 @@ class FrontendComposeSamplesToolWindowFactory : ToolWindowFactory, DumbAware {
 
     override fun createToolWindowContent(project: Project, toolWindow: ToolWindow) {
         CoroutineScopeHolder.getInstance(project).getPluginScope().launch {
-            weatherApp(project, toolWindow)
             chatApp(project, toolWindow)
-        }
-    }
-
-    private fun weatherApp(project: Project, toolWindow: ToolWindow) {
-        // create ViewModel once per tool window
-        val viewModel = WeatherAppViewModel(
-            listOf(Location("Munich", "Germany")),
-            project.service<CoroutineScopeHolder>()
-                .createScope(::WeatherAppViewModel.name),
-            WeatherForecastService()
-        )
-        Disposer.register(toolWindow.disposable, viewModel)
-
-        toolWindow.addComposeTab("Weather App") {
-            LaunchedEffect(Unit) {
-                viewModel.onReloadWeatherForecast()
-            }
-
-            WeatherAppSample(
-                viewModel,
-                viewModel,
-                service<LocationsProvider>()
-            )
         }
     }
 
@@ -56,7 +26,7 @@ class FrontendComposeSamplesToolWindowFactory : ToolWindowFactory, DumbAware {
         val viewModel = ChatViewModel(
             project.service<CoroutineScopeHolder>()
                 .createScope(ChatViewModel::class.java.simpleName),
-            ChatRepositoryApi.getInstanceAsync() // todo remote api now
+            FrontendChatRepositoryModel.getInstance(project)
         )
         Disposer.register(toolWindow.disposable, viewModel)
 

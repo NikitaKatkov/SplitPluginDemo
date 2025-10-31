@@ -1,25 +1,13 @@
-@file:Suppress("UnstableApiUsage")
+package com.example.splitplugin.frontend.compose.chatApp.viewmodel
 
-package com.example.splitplugin.shared
-
-import com.intellij.platform.rpc.RemoteApiProviderService
-import fleet.rpc.RemoteApi
-import fleet.rpc.Rpc
-import fleet.rpc.remoteApiDescriptor
+import com.example.splitplugin.shared.ChatMessage
 import kotlinx.coroutines.flow.StateFlow
 
 /**
  * Interface defining the contract for managing chat messages and interactions within a chat system.
  * Provides access to the flow of messages and supports operations for sending and editing chat messages.
  */
-@Rpc
-interface ChatRepositoryApi : RemoteApi<Unit> {
-    companion object {
-        suspend fun getInstanceAsync(): ChatRepositoryApi {
-            return RemoteApiProviderService.resolve(remoteApiDescriptor<ChatRepositoryApi>())
-        }
-    }
-
+interface ChatRepositoryApi {
     /**
      * Flow that emits a list of chat messages.
      * Updates with new messages as they are received or edited.
@@ -33,4 +21,3 @@ interface ChatRepositoryApi : RemoteApi<Unit> {
      */
     suspend fun sendMessage(messageContent: String)
 }
-
