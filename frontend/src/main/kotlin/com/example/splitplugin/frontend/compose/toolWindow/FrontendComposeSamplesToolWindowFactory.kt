@@ -10,19 +10,16 @@ import com.intellij.openapi.project.Project
 import com.intellij.openapi.util.Disposer
 import com.intellij.openapi.wm.ToolWindow
 import com.intellij.openapi.wm.ToolWindowFactory
-import kotlinx.coroutines.launch
 import org.jetbrains.jewel.bridge.addComposeTab
 
 class FrontendComposeSamplesToolWindowFactory : ToolWindowFactory, DumbAware {
     override fun shouldBeAvailable(project: Project) = true
 
     override fun createToolWindowContent(project: Project, toolWindow: ToolWindow) {
-        CoroutineScopeHolder.getInstance(project).getPluginScope().launch {
-            chatApp(project, toolWindow)
-        }
+        chatApp(project, toolWindow)
     }
 
-    private suspend fun chatApp(project: Project, toolWindow: ToolWindow) {
+    private fun chatApp(project: Project, toolWindow: ToolWindow) {
         val viewModel = ChatViewModel(
             project.service<CoroutineScopeHolder>()
                 .createScope(ChatViewModel::class.java.simpleName),
